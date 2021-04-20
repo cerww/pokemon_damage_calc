@@ -1,0 +1,5645 @@
+import {pokemon} from "./pokemon"
+
+export let gen_7_pokemon: { [key: string]: pokemon } = {};
+
+gen_7_pokemon["Rowlet"] = {
+    name:"Rowlet",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 68,
+    base_att: 55,
+    base_def: 55,
+    base_sp_att: 50,
+    base_sp_def: 50,
+    base_speed: 42,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Dartrix"] = {
+    name:"Dartrix",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 78,
+    base_att: 75,
+    base_def: 75,
+    base_sp_att: 70,
+    base_sp_def: 70,
+    base_speed: 52,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Decidueye"] = {
+    name:"Decidueye",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Ghost",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 78,
+    base_att: 107,
+    base_def: 75,
+    base_sp_att: 100,
+    base_sp_def: 100,
+    base_speed: 70,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Litten"] = {
+    name:"Litten",
+    ability:"Overgrow",
+    type1:"Fire",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 45,
+    base_att: 65,
+    base_def: 40,
+    base_sp_att: 60,
+    base_sp_def: 40,
+    base_speed: 70,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Torracat"] = {
+    name:"Torracat",
+    ability:"Overgrow",
+    type1:"Fire",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 65,
+    base_att: 85,
+    base_def: 50,
+    base_sp_att: 80,
+    base_sp_def: 50,
+    base_speed: 90,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Incineroar"] = {
+    name:"Incineroar",
+    ability:"Overgrow",
+    type1:"Fire",
+    type2:"Dark",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 95,
+    base_att: 115,
+    base_def: 90,
+    base_sp_att: 80,
+    base_sp_def: 90,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Popplio"] = {
+    name:"Popplio",
+    ability:"Overgrow",
+    type1:"Water",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 50,
+    base_att: 54,
+    base_def: 54,
+    base_sp_att: 66,
+    base_sp_def: 56,
+    base_speed: 40,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Brionne"] = {
+    name:"Brionne",
+    ability:"Overgrow",
+    type1:"Water",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 60,
+    base_att: 69,
+    base_def: 69,
+    base_sp_att: 91,
+    base_sp_def: 81,
+    base_speed: 50,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Primarina"] = {
+    name:"Primarina",
+    ability:"Overgrow",
+    type1:"Water",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 80,
+    base_att: 74,
+    base_def: 74,
+    base_sp_att: 126,
+    base_sp_def: 116,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Pikipek"] = {
+    name:"Pikipek",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 35,
+    base_att: 75,
+    base_def: 30,
+    base_sp_att: 30,
+    base_sp_def: 30,
+    base_speed: 65,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Trumbeak"] = {
+    name:"Trumbeak",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 55,
+    base_att: 85,
+    base_def: 50,
+    base_sp_att: 40,
+    base_sp_def: 50,
+    base_speed: 75,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Toucannon"] = {
+    name:"Toucannon",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 80,
+    base_att: 120,
+    base_def: 75,
+    base_sp_att: 75,
+    base_sp_def: 75,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Yungoos"] = {
+    name:"Yungoos",
+    ability:"Overgrow",
+    type1:"Normal",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 48,
+    base_att: 70,
+    base_def: 30,
+    base_sp_att: 30,
+    base_sp_def: 30,
+    base_speed: 45,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Gumshoos"] = {
+    name:"Gumshoos",
+    ability:"Overgrow",
+    type1:"Normal",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 88,
+    base_att: 110,
+    base_def: 60,
+    base_sp_att: 55,
+    base_sp_def: 60,
+    base_speed: 45,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Grubbin"] = {
+    name:"Grubbin",
+    ability:"Overgrow",
+    type1:"Bug",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 47,
+    base_att: 62,
+    base_def: 45,
+    base_sp_att: 55,
+    base_sp_def: 45,
+    base_speed: 46,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Charjabug"] = {
+    name:"Charjabug",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Electric",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 57,
+    base_att: 82,
+    base_def: 95,
+    base_sp_att: 55,
+    base_sp_def: 75,
+    base_speed: 36,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Vikavolt"] = {
+    name:"Vikavolt",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Electric",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 77,
+    base_att: 70,
+    base_def: 90,
+    base_sp_att: 145,
+    base_sp_def: 75,
+    base_speed: 43,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Crabrawler"] = {
+    name:"Crabrawler",
+    ability:"Overgrow",
+    type1:"Fighting",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 47,
+    base_att: 82,
+    base_def: 57,
+    base_sp_att: 42,
+    base_sp_def: 47,
+    base_speed: 63,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Crabominable"] = {
+    name:"Crabominable",
+    ability:"Overgrow",
+    type1:"Fighting",
+    type2:"Ice",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 97,
+    base_att: 132,
+    base_def: 77,
+    base_sp_att: 62,
+    base_sp_def: 67,
+    base_speed: 43,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Oricorio"] = {
+    name:"Oricorio",
+    ability:"Overgrow",
+    type1:"Fire",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 70,
+    base_def: 70,
+    base_sp_att: 98,
+    base_sp_def: 70,
+    base_speed: 93,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Oricorio"] = {
+    name:"Oricorio",
+    ability:"Overgrow",
+    type1:"Electric",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 70,
+    base_def: 70,
+    base_sp_att: 98,
+    base_sp_def: 70,
+    base_speed: 93,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Oricorio"] = {
+    name:"Oricorio",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 70,
+    base_def: 70,
+    base_sp_att: 98,
+    base_sp_def: 70,
+    base_speed: 93,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Oricorio"] = {
+    name:"Oricorio",
+    ability:"Overgrow",
+    type1:"Ghost",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 70,
+    base_def: 70,
+    base_sp_att: 98,
+    base_sp_def: 70,
+    base_speed: 93,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Cutiefly"] = {
+    name:"Cutiefly",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 40,
+    base_att: 45,
+    base_def: 40,
+    base_sp_att: 55,
+    base_sp_def: 40,
+    base_speed: 84,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Ribombee"] = {
+    name:"Ribombee",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 60,
+    base_att: 55,
+    base_def: 60,
+    base_sp_att: 95,
+    base_sp_def: 70,
+    base_speed: 124,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Rockruff"] = {
+    name:"Rockruff",
+    ability:"Overgrow",
+    type1:"Rock",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 45,
+    base_att: 65,
+    base_def: 40,
+    base_sp_att: 30,
+    base_sp_def: 40,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Rockruff"] = {
+    name:"Rockruff",
+    ability:"Overgrow",
+    type1:"Rock",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 45,
+    base_att: 65,
+    base_def: 40,
+    base_sp_att: 30,
+    base_sp_def: 40,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Lycanroc"] = {
+    name:"Lycanroc",
+    ability:"Overgrow",
+    type1:"Rock",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 115,
+    base_def: 65,
+    base_sp_att: 55,
+    base_sp_def: 65,
+    base_speed: 112,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Lycanroc"] = {
+    name:"Lycanroc",
+    ability:"Overgrow",
+    type1:"Rock",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 85,
+    base_att: 115,
+    base_def: 75,
+    base_sp_att: 55,
+    base_sp_def: 75,
+    base_speed: 82,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Lycanroc"] = {
+    name:"Lycanroc",
+    ability:"Overgrow",
+    type1:"Rock",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 117,
+    base_def: 65,
+    base_sp_att: 55,
+    base_sp_def: 65,
+    base_speed: 110,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Wishiwashi"] = {
+    name:"Wishiwashi",
+    ability:"Overgrow",
+    type1:"Water",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 45,
+    base_att: 20,
+    base_def: 20,
+    base_sp_att: 25,
+    base_sp_def: 25,
+    base_speed: 40,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Wishiwashi"] = {
+    name:"Wishiwashi",
+    ability:"Overgrow",
+    type1:"Water",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 45,
+    base_att: 140,
+    base_def: 130,
+    base_sp_att: 140,
+    base_sp_def: 135,
+    base_speed: 30,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Mareanie"] = {
+    name:"Mareanie",
+    ability:"Overgrow",
+    type1:"Poison",
+    type2:"Water",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 50,
+    base_att: 53,
+    base_def: 62,
+    base_sp_att: 43,
+    base_sp_def: 52,
+    base_speed: 45,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Toxapex"] = {
+    name:"Toxapex",
+    ability:"Overgrow",
+    type1:"Poison",
+    type2:"Water",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 50,
+    base_att: 63,
+    base_def: 152,
+    base_sp_att: 53,
+    base_sp_def: 142,
+    base_speed: 35,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Mudbray"] = {
+    name:"Mudbray",
+    ability:"Overgrow",
+    type1:"Ground",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 100,
+    base_def: 70,
+    base_sp_att: 45,
+    base_sp_def: 55,
+    base_speed: 45,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Mudsdale"] = {
+    name:"Mudsdale",
+    ability:"Overgrow",
+    type1:"Ground",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 100,
+    base_att: 125,
+    base_def: 100,
+    base_sp_att: 55,
+    base_sp_def: 85,
+    base_speed: 35,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Dewpider"] = {
+    name:"Dewpider",
+    ability:"Overgrow",
+    type1:"Water",
+    type2:"Bug",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 38,
+    base_att: 40,
+    base_def: 52,
+    base_sp_att: 40,
+    base_sp_def: 72,
+    base_speed: 27,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Araquanid"] = {
+    name:"Araquanid",
+    ability:"Overgrow",
+    type1:"Water",
+    type2:"Bug",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 68,
+    base_att: 70,
+    base_def: 92,
+    base_sp_att: 50,
+    base_sp_def: 132,
+    base_speed: 42,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Fomantis"] = {
+    name:"Fomantis",
+    ability:"Overgrow",
+    type1:"Grass",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 40,
+    base_att: 55,
+    base_def: 35,
+    base_sp_att: 50,
+    base_sp_def: 35,
+    base_speed: 35,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Lurantis"] = {
+    name:"Lurantis",
+    ability:"Overgrow",
+    type1:"Grass",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 105,
+    base_def: 90,
+    base_sp_att: 80,
+    base_sp_def: 90,
+    base_speed: 45,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Morelull"] = {
+    name:"Morelull",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 40,
+    base_att: 35,
+    base_def: 55,
+    base_sp_att: 65,
+    base_sp_def: 75,
+    base_speed: 15,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Shiinotic"] = {
+    name:"Shiinotic",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 60,
+    base_att: 45,
+    base_def: 80,
+    base_sp_att: 90,
+    base_sp_def: 100,
+    base_speed: 30,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Salandit"] = {
+    name:"Salandit",
+    ability:"Overgrow",
+    type1:"Poison",
+    type2:"Fire",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 48,
+    base_att: 44,
+    base_def: 40,
+    base_sp_att: 71,
+    base_sp_def: 40,
+    base_speed: 77,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Salazzle"] = {
+    name:"Salazzle",
+    ability:"Overgrow",
+    type1:"Poison",
+    type2:"Fire",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 68,
+    base_att: 64,
+    base_def: 60,
+    base_sp_att: 111,
+    base_sp_def: 60,
+    base_speed: 117,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Stufful"] = {
+    name:"Stufful",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Fighting",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 75,
+    base_def: 50,
+    base_sp_att: 45,
+    base_sp_def: 50,
+    base_speed: 50,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Bewear"] = {
+    name:"Bewear",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Fighting",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 120,
+    base_att: 125,
+    base_def: 80,
+    base_sp_att: 55,
+    base_sp_def: 60,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Bounsweet"] = {
+    name:"Bounsweet",
+    ability:"Overgrow",
+    type1:"Grass",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 42,
+    base_att: 30,
+    base_def: 38,
+    base_sp_att: 30,
+    base_sp_def: 38,
+    base_speed: 32,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Steenee"] = {
+    name:"Steenee",
+    ability:"Overgrow",
+    type1:"Grass",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 52,
+    base_att: 40,
+    base_def: 48,
+    base_sp_att: 40,
+    base_sp_def: 48,
+    base_speed: 62,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Tsareena"] = {
+    name:"Tsareena",
+    ability:"Overgrow",
+    type1:"Grass",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 72,
+    base_att: 120,
+    base_def: 98,
+    base_sp_att: 50,
+    base_sp_def: 98,
+    base_speed: 72,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Comfey"] = {
+    name:"Comfey",
+    ability:"Overgrow",
+    type1:"Fairy",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 51,
+    base_att: 52,
+    base_def: 90,
+    base_sp_att: 82,
+    base_sp_def: 110,
+    base_speed: 100,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Oranguru"] = {
+    name:"Oranguru",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Psychic",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 90,
+    base_att: 60,
+    base_def: 80,
+    base_sp_att: 90,
+    base_sp_def: 110,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Passimian"] = {
+    name:"Passimian",
+    ability:"Overgrow",
+    type1:"Fighting",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 100,
+    base_att: 120,
+    base_def: 90,
+    base_sp_att: 40,
+    base_sp_def: 60,
+    base_speed: 80,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Wimpod"] = {
+    name:"Wimpod",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Water",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 25,
+    base_att: 35,
+    base_def: 40,
+    base_sp_att: 20,
+    base_sp_def: 30,
+    base_speed: 80,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Golisopod"] = {
+    name:"Golisopod",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Water",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 125,
+    base_def: 140,
+    base_sp_att: 60,
+    base_sp_def: 90,
+    base_speed: 40,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Sandygast"] = {
+    name:"Sandygast",
+    ability:"Overgrow",
+    type1:"Ghost",
+    type2:"Ground",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 55,
+    base_att: 55,
+    base_def: 80,
+    base_sp_att: 70,
+    base_sp_def: 45,
+    base_speed: 15,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Palossand"] = {
+    name:"Palossand",
+    ability:"Overgrow",
+    type1:"Ghost",
+    type2:"Ground",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 85,
+    base_att: 75,
+    base_def: 110,
+    base_sp_att: 100,
+    base_sp_def: 75,
+    base_speed: 35,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Pyukumuku"] = {
+    name:"Pyukumuku",
+    ability:"Overgrow",
+    type1:"Water",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 55,
+    base_att: 60,
+    base_def: 130,
+    base_sp_att: 30,
+    base_sp_def: 130,
+    base_speed: 5,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Type: Null"] = {
+    name:"Type: Null",
+    ability:"Overgrow",
+    type1:"Normal",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 95,
+    base_att: 95,
+    base_def: 95,
+    base_sp_att: 95,
+    base_sp_def: 95,
+    base_speed: 59,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Silvally"] = {
+    name:"Silvally",
+    ability:"Overgrow",
+    type1:"Normal",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 95,
+    base_att: 95,
+    base_def: 95,
+    base_sp_att: 95,
+    base_sp_def: 95,
+    base_speed: 95,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Minior"] = {
+    name:"Minior",
+    ability:"Overgrow",
+    type1:"Rock",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 60,
+    base_att: 60,
+    base_def: 100,
+    base_sp_att: 60,
+    base_sp_def: 100,
+    base_speed: 60,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Minior"] = {
+    name:"Minior",
+    ability:"Overgrow",
+    type1:"Rock",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 60,
+    base_att: 100,
+    base_def: 60,
+    base_sp_att: 100,
+    base_sp_def: 60,
+    base_speed: 120,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Komala"] = {
+    name:"Komala",
+    ability:"Overgrow",
+    type1:"Normal",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 65,
+    base_att: 115,
+    base_def: 65,
+    base_sp_att: 75,
+    base_sp_def: 95,
+    base_speed: 65,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Turtonator"] = {
+    name:"Turtonator",
+    ability:"Overgrow",
+    type1:"Fire",
+    type2:"Dragon",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 60,
+    base_att: 78,
+    base_def: 135,
+    base_sp_att: 91,
+    base_sp_def: 85,
+    base_speed: 36,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Togedemaru"] = {
+    name:"Togedemaru",
+    ability:"Overgrow",
+    type1:"Electric",
+    type2:"Steel",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 65,
+    base_att: 98,
+    base_def: 63,
+    base_sp_att: 40,
+    base_sp_def: 73,
+    base_speed: 96,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Mimikyu"] = {
+    name:"Mimikyu",
+    ability:"Overgrow",
+    type1:"Ghost",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 55,
+    base_att: 90,
+    base_def: 80,
+    base_sp_att: 50,
+    base_sp_def: 105,
+    base_speed: 96,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Bruxish"] = {
+    name:"Bruxish",
+    ability:"Overgrow",
+    type1:"Water",
+    type2:"Psychic",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 68,
+    base_att: 105,
+    base_def: 70,
+    base_sp_att: 70,
+    base_sp_def: 70,
+    base_speed: 92,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Drampa"] = {
+    name:"Drampa",
+    ability:"Overgrow",
+    type1:"Normal",
+    type2:"Dragon",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 78,
+    base_att: 60,
+    base_def: 85,
+    base_sp_att: 135,
+    base_sp_def: 91,
+    base_speed: 36,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Dhelmise"] = {
+    name:"Dhelmise",
+    ability:"Overgrow",
+    type1:"Ghost",
+    type2:"Grass",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 131,
+    base_def: 100,
+    base_sp_att: 86,
+    base_sp_def: 90,
+    base_speed: 40,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Jangmo-o"] = {
+    name:"Jangmo-o",
+    ability:"Overgrow",
+    type1:"Dragon",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 45,
+    base_att: 55,
+    base_def: 65,
+    base_sp_att: 45,
+    base_sp_def: 45,
+    base_speed: 45,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Hakamo-o"] = {
+    name:"Hakamo-o",
+    ability:"Overgrow",
+    type1:"Dragon",
+    type2:"Fighting",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 55,
+    base_att: 75,
+    base_def: 90,
+    base_sp_att: 65,
+    base_sp_def: 70,
+    base_speed: 65,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Kommo-o"] = {
+    name:"Kommo-o",
+    ability:"Overgrow",
+    type1:"Dragon",
+    type2:"Fighting",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 75,
+    base_att: 110,
+    base_def: 125,
+    base_sp_att: 100,
+    base_sp_def: 105,
+    base_speed: 85,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Tapu Koko"] = {
+    name:"Tapu Koko",
+    ability:"Overgrow",
+    type1:"Electric",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 115,
+    base_def: 85,
+    base_sp_att: 95,
+    base_sp_def: 75,
+    base_speed: 130,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Tapu Lele"] = {
+    name:"Tapu Lele",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 85,
+    base_def: 75,
+    base_sp_att: 130,
+    base_sp_def: 115,
+    base_speed: 95,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Tapu Bulu"] = {
+    name:"Tapu Bulu",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 130,
+    base_def: 115,
+    base_sp_att: 85,
+    base_sp_def: 95,
+    base_speed: 75,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Tapu Fini"] = {
+    name:"Tapu Fini",
+    ability:"Overgrow",
+    type1:"Water",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 70,
+    base_att: 75,
+    base_def: 115,
+    base_sp_att: 95,
+    base_sp_def: 130,
+    base_speed: 85,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Cosmog"] = {
+    name:"Cosmog",
+    ability:"Overgrow",
+    type1:"Psychic",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 43,
+    base_att: 29,
+    base_def: 31,
+    base_sp_att: 29,
+    base_sp_def: 31,
+    base_speed: 37,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Cosmoem"] = {
+    name:"Cosmoem",
+    ability:"Overgrow",
+    type1:"Psychic",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 43,
+    base_att: 29,
+    base_def: 131,
+    base_sp_att: 29,
+    base_sp_def: 131,
+    base_speed: 37,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Solgaleo"] = {
+    name:"Solgaleo",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Steel",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 137,
+    base_att: 137,
+    base_def: 107,
+    base_sp_att: 113,
+    base_sp_def: 89,
+    base_speed: 97,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Lunala"] = {
+    name:"Lunala",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Ghost",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 137,
+    base_att: 113,
+    base_def: 89,
+    base_sp_att: 137,
+    base_sp_def: 107,
+    base_speed: 97,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Nihilego"] = {
+    name:"Nihilego",
+    ability:"Overgrow",
+    type1:"Rock",
+    type2:"Poison",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 109,
+    base_att: 53,
+    base_def: 47,
+    base_sp_att: 127,
+    base_sp_def: 131,
+    base_speed: 103,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Buzzwole"] = {
+    name:"Buzzwole",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Fighting",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 107,
+    base_att: 139,
+    base_def: 139,
+    base_sp_att: 53,
+    base_sp_def: 53,
+    base_speed: 79,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Pheromosa"] = {
+    name:"Pheromosa",
+    ability:"Overgrow",
+    type1:"Bug",
+    type2:"Fighting",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 71,
+    base_att: 137,
+    base_def: 37,
+    base_sp_att: 137,
+    base_sp_def: 37,
+    base_speed: 151,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Xurkitree"] = {
+    name:"Xurkitree",
+    ability:"Overgrow",
+    type1:"Electric",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 83,
+    base_att: 89,
+    base_def: 71,
+    base_sp_att: 173,
+    base_sp_def: 71,
+    base_speed: 83,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Celesteela"] = {
+    name:"Celesteela",
+    ability:"Overgrow",
+    type1:"Steel",
+    type2:"Flying",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 97,
+    base_att: 101,
+    base_def: 103,
+    base_sp_att: 107,
+    base_sp_def: 101,
+    base_speed: 61,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Kartana"] = {
+    name:"Kartana",
+    ability:"Overgrow",
+    type1:"Grass",
+    type2:"Steel",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 59,
+    base_att: 181,
+    base_def: 131,
+    base_sp_att: 59,
+    base_sp_def: 31,
+    base_speed: 109,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Guzzlord"] = {
+    name:"Guzzlord",
+    ability:"Overgrow",
+    type1:"Dark",
+    type2:"Dragon",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 223,
+    base_att: 101,
+    base_def: 53,
+    base_sp_att: 97,
+    base_sp_def: 53,
+    base_speed: 43,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Necrozma"] = {
+    name:"Necrozma",
+    ability:"Overgrow",
+    type1:"Psychic",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 97,
+    base_att: 107,
+    base_def: 101,
+    base_sp_att: 127,
+    base_sp_def: 89,
+    base_speed: 79,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Necrozma"] = {
+    name:"Necrozma",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Steel",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 97,
+    base_att: 157,
+    base_def: 127,
+    base_sp_att: 113,
+    base_sp_def: 109,
+    base_speed: 77,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Necrozma"] = {
+    name:"Necrozma",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Ghost",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 97,
+    base_att: 113,
+    base_def: 109,
+    base_sp_att: 157,
+    base_sp_def: 127,
+    base_speed: 77,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Necrozma"] = {
+    name:"Necrozma",
+    ability:"Overgrow",
+    type1:"Psychic",
+    type2:"Dragon",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 97,
+    base_att: 167,
+    base_def: 97,
+    base_sp_att: 167,
+    base_sp_def: 97,
+    base_speed: 129,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Magearna"] = {
+    name:"Magearna",
+    ability:"Overgrow",
+    type1:"Steel",
+    type2:"Fairy",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 80,
+    base_att: 95,
+    base_def: 115,
+    base_sp_att: 130,
+    base_sp_def: 115,
+    base_speed: 65,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Marshadow"] = {
+    name:"Marshadow",
+    ability:"Overgrow",
+    type1:"Fighting",
+    type2:"Ghost",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 90,
+    base_att: 125,
+    base_def: 80,
+    base_sp_att: 90,
+    base_sp_def: 90,
+    base_speed: 125,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Poipole"] = {
+    name:"Poipole",
+    ability:"Overgrow",
+    type1:"Poison",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 67,
+    base_att: 73,
+    base_def: 67,
+    base_sp_att: 73,
+    base_sp_def: 67,
+    base_speed: 73,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Naganadel"] = {
+    name:"Naganadel",
+    ability:"Overgrow",
+    type1:"Poison",
+    type2:"Dragon",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 73,
+    base_att: 73,
+    base_def: 73,
+    base_sp_att: 127,
+    base_sp_def: 73,
+    base_speed: 121,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Stakataka"] = {
+    name:"Stakataka",
+    ability:"Overgrow",
+    type1:"Rock",
+    type2:"Steel",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 61,
+    base_att: 131,
+    base_def: 211,
+    base_sp_att: 53,
+    base_sp_def: 101,
+    base_speed: 13,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Blacephalon"] = {
+    name:"Blacephalon",
+    ability:"Overgrow",
+    type1:"Fire",
+    type2:"Ghost",
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 53,
+    base_att: 127,
+    base_def: 53,
+    base_sp_att: 151,
+    base_sp_def: 79,
+    base_speed: 107,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Zeraora"] = {
+    name:"Zeraora",
+    ability:"Overgrow",
+    type1:"Electric",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 88,
+    base_att: 112,
+    base_def: 75,
+    base_sp_att: 102,
+    base_sp_def: 80,
+    base_speed: 143,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Meltan"] = {
+    name:"Meltan",
+    ability:"Overgrow",
+    type1:"Steel",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 46,
+    base_att: 65,
+    base_def: 65,
+    base_sp_att: 55,
+    base_sp_def: 35,
+    base_speed: 34,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
+
+
+gen_7_pokemon["Melmetal"] = {
+    name:"Melmetal",
+    ability:"Overgrow",
+    type1:"Steel",
+
+
+    gender:"Male",
+    status:"Healthy",
+    item:"None",
+    dynamaxed:false,
+    gmax_able:false,
+    nature:"Bashful",
+    leech_seeded: false,
+    protecting: false,
+    helping_handed: false,
+    foresight: false,
+    level: 100,
+    base_hp: 135,
+    base_att: 143,
+    base_def: 143,
+    base_sp_att: 80,
+    base_sp_def: 65,
+    base_speed: 34,
+
+    hp_ivs: 31,
+    att_ivs: 31,
+    def_ivs: 31,
+    sp_att_ivs: 31,
+    sp_def_ivs: 31,
+    speed_ivs: 31,
+    hp_evs: 0,
+    att_evs: 0,
+    def_evs: 0,
+    sp_att_evs: 0,
+    sp_def_evs: 0,
+    speed_evs: 0,
+    att_boost: 0,
+    def_boost: 0,
+    sp_att_boost: 0,
+    sp_def_boost: 0,
+    speed_boost: 0,
+    current_hp: 200,
+
+    moves: [
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        }
+    ]
+}
