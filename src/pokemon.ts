@@ -1566,7 +1566,7 @@ export interface pokemon {
     current_hp: number;
 
     moves: move[];
-    extra_data?: object;
+    extra_data?: any;
     __id?: string;
 }
 
@@ -2468,8 +2468,9 @@ export class pokemon_field {
     public fairy_aura: boolean = false;
     public dark_aura: boolean = false;
     public aura_break: boolean = false;
-    public mud_sport:boolean = false;
-    public water_sport:boolean = false;
+    public mud_sport: boolean = false;
+    public water_sport: boolean = false;
+    public ion_deluge: boolean = false;
 
 }
 
@@ -3107,13 +3108,21 @@ export function poke_round(n: number) {
     return decimal_part + 1;
 }
 
+export function calculate_stat_raw(base: number, ivs: number, evs: number,boost:number,level:number, nature_multiplier: -1 | 0 | 1): number {
+    return Math.floor(
+        stat_after_boost(
+            Math.floor(((base * 2 + ivs + Math.floor(evs / 4)) * level) / 100) + 5,
+            boost)
+    );
+}
+
 export function calculateActualStat(pkm: pokemon, stat: "hp" | "att" | "def" | "sp_att" | "sp_def" | "speed") {
     if (stat === "hp") {
         if (pkm.base_hp === 1) {
             return 1;
         }
-        return Math.floor((((pkm.base_hp * 2 + pkm.hp_ivs) + Math.floor(pkm.hp_evs / 4)) * pkm.level))
-            / 100 + 5 + pkm.level;
+        return (Math.floor((((pkm.base_hp * 2 + pkm.hp_ivs) + Math.floor(pkm.hp_evs / 4)) * pkm.level))
+            / 100 + 5 + pkm.level) * (pkm.dynamaxed?2:1);
     } else {
         let [base, boost, iv, ev] =
             stat === "att" ? [pkm.base_att, pkm.att_boost, pkm.att_ivs, pkm.att_evs] :
@@ -3129,7 +3138,6 @@ export function calculateActualStat(pkm: pokemon, stat: "hp" | "att" | "def" | "
         );
 
     }
-
 }
 
 

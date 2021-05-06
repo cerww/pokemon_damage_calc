@@ -17,9 +17,10 @@ import {
     calculateStatNoBoost
 } from './pokemon'
 import {deepCopy} from "./deepCopy";
-import {all_move_names, pokemons} from "./defaultPokemon";
+import {all_move_names, all_pokemon_names, pokemons} from "./defaultPokemon";
 import {all_moves} from "./all_moves";
 import {calculateDamage} from "./calculateDamage";
+import {cursorTo} from "readline";
 
 function Centered(props: any) {
     let style = {
@@ -62,8 +63,8 @@ export class CalculationPane extends React.Component<{
                     this.props.defending_team.map((pkm2, j) =>
                         <div onClick={() => this.props.onMoveSelect(pkm, pkm2, this.props.pkm_field, move)}
                              className={`CalcPaneCell ${idx % 2 ? "oddRowCell" : "evenRowCell"} ${j % 2 ? "oddColumnCell" : "evenColumnCell"}`}>
-                            {(()=>{
-                                let damages =calculateDamage(
+                            {(() => {
+                                let damages = calculateDamage(
                                     pkm,
                                     pkm2,
                                     this.props.attacker,
@@ -72,7 +73,7 @@ export class CalculationPane extends React.Component<{
                                     move);
                                 return `${
                                     damages.reduce((a, b) => Math.min(a, b))} - ${
-                                    damages.reduce((a,b)=>Math.max(a,b))}
+                                    damages.reduce((a, b) => Math.max(a, b))}
                                 `;
                             })()
                             }
@@ -100,7 +101,7 @@ export class CalculationPane extends React.Component<{
 
             >
                 <div style={{gridTemplateColumns: "auto auto", display: "inline-grid", marginBottom: "17px"}}>
-                    <div style={{textAlign:"center"}} className={"calculationHeader"}>Attacker</div>
+                    <div style={{textAlign: "center"}} className={"calculationHeader"}>Attacker</div>
                     <div className={"calculationHeader"}>Move</div>
 
                     {this.props.attacking_team.map((pkm, idx) => {
@@ -111,10 +112,10 @@ export class CalculationPane extends React.Component<{
                                  className={idx % 2 ? "oddCalcRow" : "evenCalcRow"}
                             >
                                 <div>
-                                    {(()=>{
+                                    {(() => {
                                         let name = pkm.nickname ?? pkm.name;
-                                        if(name.length>17){
-                                            return name.substr(0,15) +"...";
+                                        if (name.length > 17) {
+                                            return name.substr(0, 15) + "...";
                                         }
                                         return name;
                                     })()}
@@ -122,7 +123,7 @@ export class CalculationPane extends React.Component<{
                             </div>
                             {pkm.moves.map((move) =>
                                 <div className={`moveEntry ${idx % 2 ? "oddCalcRow" : "evenCalcRow"}`}>
-                                    {move.name.substr(0,13)}
+                                    {move.name.substr(0, 13)}
                                 </div>
                             )}
                         </React.Fragment>
@@ -295,7 +296,9 @@ type useTeamArg =
     { action: "modify_move", idx: number, modified_move: Partial<move>, move_idx: number } |
     { action: "add_new_move", idx: number, new_move: move } |
     { action: "modify_pokemon", idx: number, modified_pokemon: Partial<pokemon> } |
-    { action: "remove_pokemon", idx: number };
+    { action: "remove_pokemon", idx: number } |
+    { action: "modify_pokemon_extra_data", idx: number, extra_data_to_merge: any }
+    ;
 
 
 function useTeam(init_team: pokemon[]) {
@@ -329,6 +332,16 @@ function useTeam(init_team: pokemon[]) {
             case "modify_pokemon": {
                 let ret = [...a];
                 a[b.idx] = {...a[b.idx], ...b.modified_pokemon}
+                return ret;
+            }
+            case "modify_pokemon_extra_data": {
+                let ret = [...a];
+                a[b.idx] = {
+                    ...a[b.idx], extra_data: {
+                        ...(a[b.idx].extra_data ?? {}),
+                        ...b.extra_data_to_merge
+                    }
+                }
                 return ret;
             }
 
@@ -420,21 +433,21 @@ export function PokemonCalc(props: {
                                 changeField({terrain: "None"})
                             }}
                             enabled={field.terrain === "None"}>
-                            &nbsp;&nbsp;None&nbsp;&nbsp;
+                            &nbsp;&nbsp;No Terrain&nbsp;&nbsp;
                         </MyButton>
                         <MyButton
                             onClick={() => {
                                 changeField({terrain: "Grassy"})
                             }}
                             enabled={field.terrain === "Grassy"}>
-                            &nbsp;&nbsp;Grassy&nbsp;&nbsp;
+                            &nbsp;&nbsp;Grassy Terrain&nbsp;&nbsp;
                         </MyButton>
                         <MyButton
                             onClick={() => {
                                 changeField({terrain: "Electric"})
                             }}
                             enabled={field.terrain === "Electric"}>
-                            &nbsp;&nbsp;Electric&nbsp;&nbsp;
+                            &nbsp;&nbsp;Electric Terrain&nbsp;&nbsp;
                         </MyButton>
                     </div>
                 </Centered>
@@ -446,7 +459,7 @@ export function PokemonCalc(props: {
                                 changeField({terrain: "Psychic"})
                             }}
                             enabled={field.terrain === "Psychic"}>
-                            &nbsp;&nbsp;Psychic&nbsp;&nbsp;
+                            &nbsp;&nbsp;Psychic Terrain&nbsp;&nbsp;
                         </MyButton>
                         <MyButton
                             style={{borderTop: "None"}}
@@ -454,7 +467,7 @@ export function PokemonCalc(props: {
                                 changeField({terrain: "Misty"})
                             }}
                             enabled={field.terrain === "Misty"}>
-                            &nbsp;&nbsp;Misty&nbsp;&nbsp;
+                            &nbsp;&nbsp;Misty Terrain&nbsp;&nbsp;
                         </MyButton>
                     </div>
                 </Centered>
@@ -836,8 +849,21 @@ export function PokemonCalc(props: {
     function thingyThatChangesPokemon(pkm: pokemon, isLeftSide: boolean) {
         let cb = isLeftSide ? change_left_team : change_right_team;
         let idx = isLeftSide ? left_side_idx : right_side_idx;
+        const hp_percent = pkm.current_hp / calculateActualStat(pkm, "hp");
         return <div className={"modifyPokemonTab"}>
-            <div id="dropDownChangesPokemon"></div>
+            <div id="dropDownChangesPokemon">
+                <div className={"SelectorLabel"} style={{fontSize: "12px"}}/>
+                <select>
+                    <option>{pkm.name}</option>
+                    {Object.keys(pokemons).map((a) => <option value={a} onClick={(e) => {
+                        cb({
+                            action: "modify_pokemon",
+                            idx,
+                            modified_pokemon: pokemons[a]
+                        });
+                    }}>{a}</option>)}
+                </select>
+            </div>
             <div id="resetButton"></div>
             <div id="nickname">
                 <div className={"SelectorLabel"} style={{fontSize: "12px"}}>Nick:</div>
@@ -848,7 +874,7 @@ export function PokemonCalc(props: {
                         modified_pokemon: {nickname: e.target.value as string}
                     });
                 }
-                } style={{width:"30ch"}}/>
+                } style={{width: "30ch"}}/>
             </div>
             <div id="pokemonName">
 
@@ -1310,9 +1336,76 @@ export function PokemonCalc(props: {
 
             </div>
             <br/>
-            <div>current HP, also includes dynamax button</div>
-            <br/>
+            <div>
+                <div className={"SelectorLabel"}>HP:</div>
+                <input style={{width: "5ch"}} value={pkm.current_hp}
+                       onChange={(e) => {
+                           cb({
+                               action: "modify_pokemon",
+                               idx,
+                               modified_pokemon: {
+                                   current_hp: Math.max(Math.min(Number(e.target.value), calculateActualStat(pkm, "hp")), 0)
+                               }
+                           });
+                       }
+                       }>
 
+                </input>
+
+                <div style={{fontSize: "1.2em", paddingLeft: "3px"}}>/{calculateActualStat(pkm, "hp")}</div>
+                <div className={"SelectorLabel"}>%</div>
+                <input style={{width: "5ch"}} value={Math.round(hp_percent * 100)}
+                       onChange={(e) => {
+                           cb({
+                               action: "modify_pokemon",
+                               idx,
+                               modified_pokemon: {
+                                   current_hp: Math.floor(Math.max(Math.min(Number(e.target.value), 100), 0) * calculateActualStat(pkm, "hp") / 100)
+                               }
+                           });
+                       }
+                       }>
+
+                </input>
+                <div style={{fontSize: "1.2em", paddingLeft: "3px"}}>/100</div>
+
+            </div>
+
+            <div>
+                <div className={`hpBar ${(() => {
+
+                    if (hp_percent < .20) {
+                        return "red_hp";
+                    } else if (hp_percent < .50) {
+                        return "yellow_hp";
+                    } else {
+                        return "green_hp";
+                    }
+                })()}`}>
+                    <div style={{width: `${hp_percent * 100}%`}} className={`hp_bar_inner ${(() => {
+
+                        if (hp_percent < .20) {
+                            return "red_hp";
+                        } else if (hp_percent < .50) {
+                            return "yellow_hp";
+                        } else {
+                            return "green_hp";
+                        }
+                    })()}`}/>
+                </div>
+
+            </div>
+            <br/>
+            <div>
+                <MyButton enabled={pkm.dynamaxed} onClick={() => cb({
+                    action: "modify_pokemon",
+                    idx,
+                    modified_pokemon: {
+                        dynamaxed: !pkm.dynamaxed,
+                        current_hp: pkm.dynamaxed ? Math.floor(pkm.current_hp / 2) : pkm.current_hp * 2
+                    }
+                })}>Dynamax</MyButton>
+            </div>
             <div>
                 <MyButton onClick={(e: any, enabled: boolean) => {
                     cb({
@@ -1345,7 +1438,6 @@ export function PokemonCalc(props: {
                     Leech Seed
                 </MyButton>
             </div>
-            <div>health bar</div>
             <div style={{display: "block"}}>
                 {pkm.moves.map((m, move_idx) => {
                     return <div style={{

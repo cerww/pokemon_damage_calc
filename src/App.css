@@ -407,3 +407,40 @@ input[type=number] {
 .calcPaneOuter{
     user-select: none;
 }
+
+.moveEntry, .CalcPaneCell{
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+.yellow_hp{
+    --bg_color:yellow;
+    --bg_inner:#00AAAA;
+}
+
+.red_hp{
+    --bg_color:red;
+    --bg_inner:#FF0000;
+}
+
+.green_hp{
+    --bg_color:green;
+    --bg_inner:#00FF00;
+}
+
+.hpBar{
+    margin-top:5px;
+    width:100%;
+    border:1px solid var(--bg_color);
+    height: 7px;
+    margin-right:5px;
+    border-radius:3px;
+    border-top-color: var(--bg_inner);
+}
+
+.hp_bar_inner{
+    background-image: linear-gradient(0deg,var(--bg_color) 0%, var(--bg_color) 70%, var(--bg_inner) 71%);
+    height: 100%;
+}
+
+
