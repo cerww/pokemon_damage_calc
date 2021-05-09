@@ -57,8 +57,6 @@ gen_1_pokemon["Bulbasaur"] = {
         }
     ]
 }
-
-
 gen_1_pokemon["Ivysaur"] = {
     name:"Ivysaur",
     ability:"Overgrow",
@@ -114,8 +112,6 @@ gen_1_pokemon["Ivysaur"] = {
         }
     ]
 }
-
-
 gen_1_pokemon["Venusaur"] = {
     name:"Venusaur",
     ability:"Overgrow",
@@ -171,8 +167,6 @@ gen_1_pokemon["Venusaur"] = {
         }
     ]
 }
-
-
 gen_1_pokemon["Venusaur"] = {
     name:"Venusaur",
     ability:"Overgrow",
@@ -228,8 +222,6 @@ gen_1_pokemon["Venusaur"] = {
         }
     ]
 }
-
-
 gen_1_pokemon["Charmander"] = {
     name:"Charmander",
     ability:"Overgrow",
@@ -285,8 +277,6 @@ gen_1_pokemon["Charmander"] = {
         }
     ]
 }
-
-
 gen_1_pokemon["Charmeleon"] = {
     name:"Charmeleon",
     ability:"Overgrow",
@@ -342,8 +332,6 @@ gen_1_pokemon["Charmeleon"] = {
         }
     ]
 }
-
-
 gen_1_pokemon["Charizard"] = {
     name:"Charizard",
     ability:"Overgrow",
@@ -399,7 +387,6 @@ gen_1_pokemon["Charizard"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Charizard"] = {
     name:"Charizard",
@@ -457,7 +444,6 @@ gen_1_pokemon["Charizard"] = {
     ]
 }
 
-
 gen_1_pokemon["Charizard"] = {
     name:"Charizard",
     ability:"Overgrow",
@@ -513,7 +499,6 @@ gen_1_pokemon["Charizard"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Squirtle"] = {
     name:"Squirtle",
@@ -571,7 +556,6 @@ gen_1_pokemon["Squirtle"] = {
     ]
 }
 
-
 gen_1_pokemon["Wartortle"] = {
     name:"Wartortle",
     ability:"Overgrow",
@@ -628,7 +612,6 @@ gen_1_pokemon["Wartortle"] = {
     ]
 }
 
-
 gen_1_pokemon["Blastoise"] = {
     name:"Blastoise",
     ability:"Overgrow",
@@ -681,12 +664,37 @@ gen_1_pokemon["Blastoise"] = {
             is_spread_move: false,
             is_crit: false,
             is_z_move: false,
+        },
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        },
+        {
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
+        },{
+            name: "Tackle",
+            type: "Normal",
+            category: "Physical",
+            power: 30,
+            is_spread_move: false,
+            is_crit: false,
+            is_z_move: false,
         }
     ]
 }
 
-
-gen_1_pokemon["Blastoise"] = {
+gen_1_pokemon["Blastoise Gmax"] = {
     name:"Blastoise",
     ability:"Overgrow",
     type1:"Water",
@@ -741,7 +749,6 @@ gen_1_pokemon["Blastoise"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Caterpie"] = {
     name:"Caterpie",
@@ -799,7 +806,6 @@ gen_1_pokemon["Caterpie"] = {
     ]
 }
 
-
 gen_1_pokemon["Metapod"] = {
     name:"Metapod",
     ability:"Overgrow",
@@ -855,7 +861,6 @@ gen_1_pokemon["Metapod"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Butterfree"] = {
     name:"Butterfree",
@@ -913,7 +918,6 @@ gen_1_pokemon["Butterfree"] = {
     ]
 }
 
-
 gen_1_pokemon["Weedle"] = {
     name:"Weedle",
     ability:"Overgrow",
@@ -969,7 +973,6 @@ gen_1_pokemon["Weedle"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Kakuna"] = {
     name:"Kakuna",
@@ -1027,7 +1030,6 @@ gen_1_pokemon["Kakuna"] = {
     ]
 }
 
-
 gen_1_pokemon["Beedrill"] = {
     name:"Beedrill",
     ability:"Overgrow",
@@ -1083,7 +1085,6 @@ gen_1_pokemon["Beedrill"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Beedrill"] = {
     name:"Beedrill",
@@ -1141,7 +1142,6 @@ gen_1_pokemon["Beedrill"] = {
     ]
 }
 
-
 gen_1_pokemon["Pidgey"] = {
     name:"Pidgey",
     ability:"Overgrow",
@@ -1197,7 +1197,6 @@ gen_1_pokemon["Pidgey"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Pidgeotto"] = {
     name:"Pidgeotto",
@@ -1255,7 +1254,6 @@ gen_1_pokemon["Pidgeotto"] = {
     ]
 }
 
-
 gen_1_pokemon["Pidgeot"] = {
     name:"Pidgeot",
     ability:"Overgrow",
@@ -1311,7 +1309,6 @@ gen_1_pokemon["Pidgeot"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Pidgeot"] = {
     name:"Pidgeot",
@@ -1369,7 +1366,6 @@ gen_1_pokemon["Pidgeot"] = {
     ]
 }
 
-
 gen_1_pokemon["Rattata"] = {
     name:"Rattata",
     ability:"Overgrow",
@@ -1426,7 +1422,6 @@ gen_1_pokemon["Rattata"] = {
     ]
 }
 
-
 gen_1_pokemon["Rattata"] = {
     name:"Rattata",
     ability:"Overgrow",
@@ -1482,7 +1477,6 @@ gen_1_pokemon["Rattata"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Raticate"] = {
     name:"Raticate",
@@ -1540,7 +1534,6 @@ gen_1_pokemon["Raticate"] = {
     ]
 }
 
-
 gen_1_pokemon["Raticate"] = {
     name:"Raticate",
     ability:"Overgrow",
@@ -1596,7 +1589,6 @@ gen_1_pokemon["Raticate"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Spearow"] = {
     name:"Spearow",
@@ -1654,7 +1646,6 @@ gen_1_pokemon["Spearow"] = {
     ]
 }
 
-
 gen_1_pokemon["Fearow"] = {
     name:"Fearow",
     ability:"Overgrow",
@@ -1710,7 +1701,6 @@ gen_1_pokemon["Fearow"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Ekans"] = {
     name:"Ekans",
@@ -1768,7 +1758,6 @@ gen_1_pokemon["Ekans"] = {
     ]
 }
 
-
 gen_1_pokemon["Arbok"] = {
     name:"Arbok",
     ability:"Overgrow",
@@ -1824,7 +1813,6 @@ gen_1_pokemon["Arbok"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Pikachu"] = {
     name:"Pikachu",
@@ -1882,7 +1870,6 @@ gen_1_pokemon["Pikachu"] = {
     ]
 }
 
-
 gen_1_pokemon["Pikachu"] = {
     name:"Pikachu",
     ability:"Overgrow",
@@ -1938,7 +1925,6 @@ gen_1_pokemon["Pikachu"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Raichu"] = {
     name:"Raichu",
@@ -1996,7 +1982,6 @@ gen_1_pokemon["Raichu"] = {
     ]
 }
 
-
 gen_1_pokemon["Raichu"] = {
     name:"Raichu",
     ability:"Overgrow",
@@ -2052,7 +2037,6 @@ gen_1_pokemon["Raichu"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Sandshrew"] = {
     name:"Sandshrew",
@@ -2110,7 +2094,6 @@ gen_1_pokemon["Sandshrew"] = {
     ]
 }
 
-
 gen_1_pokemon["Sandshrew"] = {
     name:"Sandshrew",
     ability:"Overgrow",
@@ -2166,7 +2149,6 @@ gen_1_pokemon["Sandshrew"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Sandslash"] = {
     name:"Sandslash",
@@ -2224,7 +2206,6 @@ gen_1_pokemon["Sandslash"] = {
     ]
 }
 
-
 gen_1_pokemon["Sandslash"] = {
     name:"Sandslash",
     ability:"Overgrow",
@@ -2281,7 +2262,6 @@ gen_1_pokemon["Sandslash"] = {
     ]
 }
 
-
 gen_1_pokemon["Nidoran♀"] = {
     name:"Nidoran♀",
     ability:"Overgrow",
@@ -2336,7 +2316,6 @@ gen_1_pokemon["Nidoran♀"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Nidorina"] = {
     name:"Nidorina",
@@ -2394,7 +2373,6 @@ gen_1_pokemon["Nidorina"] = {
     ]
 }
 
-
 gen_1_pokemon["Nidoqueen"] = {
     name:"Nidoqueen",
     ability:"Overgrow",
@@ -2451,7 +2429,6 @@ gen_1_pokemon["Nidoqueen"] = {
     ]
 }
 
-
 gen_1_pokemon["Nidoran♂"] = {
     name:"Nidoran♂",
     ability:"Overgrow",
@@ -2506,7 +2483,6 @@ gen_1_pokemon["Nidoran♂"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Nidorino"] = {
     name:"Nidorino",
@@ -2564,7 +2540,6 @@ gen_1_pokemon["Nidorino"] = {
     ]
 }
 
-
 gen_1_pokemon["Nidoking"] = {
     name:"Nidoking",
     ability:"Overgrow",
@@ -2621,7 +2596,6 @@ gen_1_pokemon["Nidoking"] = {
     ]
 }
 
-
 gen_1_pokemon["Clefairy"] = {
     name:"Clefairy",
     ability:"Overgrow",
@@ -2676,7 +2650,6 @@ gen_1_pokemon["Clefairy"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Clefable"] = {
     name:"Clefable",
@@ -2734,7 +2707,6 @@ gen_1_pokemon["Clefable"] = {
     ]
 }
 
-
 gen_1_pokemon["Vulpix"] = {
     name:"Vulpix",
     ability:"Overgrow",
@@ -2790,7 +2762,6 @@ gen_1_pokemon["Vulpix"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Vulpix"] = {
     name:"Vulpix",
@@ -2847,7 +2818,6 @@ gen_1_pokemon["Vulpix"] = {
         }
     ]
 }
-
 gen_1_pokemon["Ninetales"] = {
     name:"Ninetales",
     ability:"Overgrow",
@@ -2903,7 +2873,6 @@ gen_1_pokemon["Ninetales"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Ninetales"] = {
     name:"Ninetales",
@@ -2961,7 +2930,6 @@ gen_1_pokemon["Ninetales"] = {
     ]
 }
 
-
 gen_1_pokemon["Jigglypuff"] = {
     name:"Jigglypuff",
     ability:"Overgrow",
@@ -3017,7 +2985,6 @@ gen_1_pokemon["Jigglypuff"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Wigglytuff"] = {
     name:"Wigglytuff",
@@ -3075,7 +3042,6 @@ gen_1_pokemon["Wigglytuff"] = {
     ]
 }
 
-
 gen_1_pokemon["Zubat"] = {
     name:"Zubat",
     ability:"Overgrow",
@@ -3131,7 +3097,6 @@ gen_1_pokemon["Zubat"] = {
         }
     ]
 }
-
 gen_1_pokemon["Golbat"] = {
     name:"Golbat",
     ability:"Overgrow",
@@ -3187,7 +3152,6 @@ gen_1_pokemon["Golbat"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Oddish"] = {
     name:"Oddish",
@@ -3245,7 +3209,6 @@ gen_1_pokemon["Oddish"] = {
     ]
 }
 
-
 gen_1_pokemon["Gloom"] = {
     name:"Gloom",
     ability:"Overgrow",
@@ -3301,7 +3264,6 @@ gen_1_pokemon["Gloom"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Vileplume"] = {
     name:"Vileplume",
@@ -3359,7 +3321,6 @@ gen_1_pokemon["Vileplume"] = {
     ]
 }
 
-
 gen_1_pokemon["Paras"] = {
     name:"Paras",
     ability:"Overgrow",
@@ -3415,7 +3376,6 @@ gen_1_pokemon["Paras"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Parasect"] = {
     name:"Parasect",
@@ -3473,7 +3433,6 @@ gen_1_pokemon["Parasect"] = {
     ]
 }
 
-
 gen_1_pokemon["Venonat"] = {
     name:"Venonat",
     ability:"Overgrow",
@@ -3529,7 +3488,6 @@ gen_1_pokemon["Venonat"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Venomoth"] = {
     name:"Venomoth",
@@ -3587,7 +3545,6 @@ gen_1_pokemon["Venomoth"] = {
     ]
 }
 
-
 gen_1_pokemon["Diglett"] = {
     name:"Diglett",
     ability:"Overgrow",
@@ -3643,7 +3600,6 @@ gen_1_pokemon["Diglett"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Diglett"] = {
     name:"Diglett",
@@ -3701,7 +3657,6 @@ gen_1_pokemon["Diglett"] = {
     ]
 }
 
-
 gen_1_pokemon["Dugtrio"] = {
     name:"Dugtrio",
     ability:"Overgrow",
@@ -3757,7 +3712,6 @@ gen_1_pokemon["Dugtrio"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Dugtrio"] = {
     name:"Dugtrio",
@@ -3815,7 +3769,6 @@ gen_1_pokemon["Dugtrio"] = {
     ]
 }
 
-
 gen_1_pokemon["Meowth"] = {
     name:"Meowth",
     ability:"Overgrow",
@@ -3872,7 +3825,6 @@ gen_1_pokemon["Meowth"] = {
     ]
 }
 
-
 gen_1_pokemon["Meowth"] = {
     name:"Meowth",
     ability:"Overgrow",
@@ -3928,7 +3880,6 @@ gen_1_pokemon["Meowth"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Meowth"] = {
     name:"Meowth",
@@ -3986,7 +3937,6 @@ gen_1_pokemon["Meowth"] = {
     ]
 }
 
-
 gen_1_pokemon["Persian"] = {
     name:"Persian",
     ability:"Overgrow",
@@ -4042,7 +3992,6 @@ gen_1_pokemon["Persian"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Persian"] = {
     name:"Persian",
@@ -4100,7 +4049,6 @@ gen_1_pokemon["Persian"] = {
     ]
 }
 
-
 gen_1_pokemon["Psyduck"] = {
     name:"Psyduck",
     ability:"Overgrow",
@@ -4156,7 +4104,6 @@ gen_1_pokemon["Psyduck"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Golduck"] = {
     name:"Golduck",
@@ -4214,7 +4161,6 @@ gen_1_pokemon["Golduck"] = {
     ]
 }
 
-
 gen_1_pokemon["Mankey"] = {
     name:"Mankey",
     ability:"Overgrow",
@@ -4270,7 +4216,6 @@ gen_1_pokemon["Mankey"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Primeape"] = {
     name:"Primeape",
@@ -4328,7 +4273,6 @@ gen_1_pokemon["Primeape"] = {
     ]
 }
 
-
 gen_1_pokemon["Growlithe"] = {
     name:"Growlithe",
     ability:"Overgrow",
@@ -4384,7 +4328,6 @@ gen_1_pokemon["Growlithe"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Arcanine"] = {
     name:"Arcanine",
@@ -4442,7 +4385,6 @@ gen_1_pokemon["Arcanine"] = {
     ]
 }
 
-
 gen_1_pokemon["Poliwag"] = {
     name:"Poliwag",
     ability:"Overgrow",
@@ -4498,7 +4440,6 @@ gen_1_pokemon["Poliwag"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Poliwhirl"] = {
     name:"Poliwhirl",
@@ -4556,7 +4497,6 @@ gen_1_pokemon["Poliwhirl"] = {
     ]
 }
 
-
 gen_1_pokemon["Poliwrath"] = {
     name:"Poliwrath",
     ability:"Overgrow",
@@ -4612,7 +4552,6 @@ gen_1_pokemon["Poliwrath"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Abra"] = {
     name:"Abra",
@@ -4670,7 +4609,6 @@ gen_1_pokemon["Abra"] = {
     ]
 }
 
-
 gen_1_pokemon["Kadabra"] = {
     name:"Kadabra",
     ability:"Overgrow",
@@ -4726,7 +4664,6 @@ gen_1_pokemon["Kadabra"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Alakazam"] = {
     name:"Alakazam",
@@ -4784,7 +4721,6 @@ gen_1_pokemon["Alakazam"] = {
     ]
 }
 
-
 gen_1_pokemon["Alakazam"] = {
     name:"Alakazam",
     ability:"Overgrow",
@@ -4840,7 +4776,6 @@ gen_1_pokemon["Alakazam"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Machop"] = {
     name:"Machop",
@@ -4898,7 +4833,6 @@ gen_1_pokemon["Machop"] = {
     ]
 }
 
-
 gen_1_pokemon["Machoke"] = {
     name:"Machoke",
     ability:"Overgrow",
@@ -4954,7 +4888,6 @@ gen_1_pokemon["Machoke"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Machamp"] = {
     name:"Machamp",
@@ -5012,7 +4945,6 @@ gen_1_pokemon["Machamp"] = {
     ]
 }
 
-
 gen_1_pokemon["Bellsprout"] = {
     name:"Bellsprout",
     ability:"Overgrow",
@@ -5068,7 +5000,6 @@ gen_1_pokemon["Bellsprout"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Weepinbell"] = {
     name:"Weepinbell",
@@ -5126,7 +5057,6 @@ gen_1_pokemon["Weepinbell"] = {
     ]
 }
 
-
 gen_1_pokemon["Victreebel"] = {
     name:"Victreebel",
     ability:"Overgrow",
@@ -5182,7 +5112,6 @@ gen_1_pokemon["Victreebel"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Tentacool"] = {
     name:"Tentacool",
@@ -5240,7 +5169,6 @@ gen_1_pokemon["Tentacool"] = {
     ]
 }
 
-
 gen_1_pokemon["Tentacruel"] = {
     name:"Tentacruel",
     ability:"Overgrow",
@@ -5297,7 +5225,6 @@ gen_1_pokemon["Tentacruel"] = {
     ]
 }
 
-
 gen_1_pokemon["Geodude"] = {
     name:"Geodude",
     ability:"Overgrow",
@@ -5354,7 +5281,6 @@ gen_1_pokemon["Geodude"] = {
     ]
 }
 
-
 gen_1_pokemon["Geodude"] = {
     name:"Geodude",
     ability:"Overgrow",
@@ -5410,7 +5336,6 @@ gen_1_pokemon["Geodude"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Graveler"] = {
     name:"Graveler",
@@ -5468,7 +5393,6 @@ gen_1_pokemon["Graveler"] = {
     ]
 }
 
-
 gen_1_pokemon["Graveler"] = {
     name:"Graveler",
     ability:"Overgrow",
@@ -5524,7 +5448,6 @@ gen_1_pokemon["Graveler"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Golem"] = {
     name:"Golem",
@@ -5582,7 +5505,6 @@ gen_1_pokemon["Golem"] = {
     ]
 }
 
-
 gen_1_pokemon["Golem"] = {
     name:"Golem",
     ability:"Overgrow",
@@ -5638,7 +5560,6 @@ gen_1_pokemon["Golem"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Ponyta"] = {
     name:"Ponyta",
@@ -5695,7 +5616,6 @@ gen_1_pokemon["Ponyta"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Ponyta"] = {
     name:"Ponyta",
@@ -5753,7 +5673,6 @@ gen_1_pokemon["Ponyta"] = {
     ]
 }
 
-
 gen_1_pokemon["Rapidash"] = {
     name:"Rapidash",
     ability:"Overgrow",
@@ -5809,7 +5728,6 @@ gen_1_pokemon["Rapidash"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Rapidash"] = {
     name:"Rapidash",
@@ -5867,7 +5785,6 @@ gen_1_pokemon["Rapidash"] = {
     ]
 }
 
-
 gen_1_pokemon["Slowpoke"] = {
     name:"Slowpoke",
     ability:"Overgrow",
@@ -5923,7 +5840,6 @@ gen_1_pokemon["Slowpoke"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Slowpoke"] = {
     name:"Slowpoke",
@@ -5981,7 +5897,6 @@ gen_1_pokemon["Slowpoke"] = {
     ]
 }
 
-
 gen_1_pokemon["Slowbro"] = {
     name:"Slowbro",
     ability:"Overgrow",
@@ -6037,7 +5952,6 @@ gen_1_pokemon["Slowbro"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Slowbro"] = {
     name:"Slowbro",
@@ -6095,7 +6009,6 @@ gen_1_pokemon["Slowbro"] = {
     ]
 }
 
-
 gen_1_pokemon["Slowbro"] = {
     name:"Slowbro",
     ability:"Overgrow",
@@ -6151,7 +6064,6 @@ gen_1_pokemon["Slowbro"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Magnemite"] = {
     name:"Magnemite",
@@ -6209,7 +6121,6 @@ gen_1_pokemon["Magnemite"] = {
     ]
 }
 
-
 gen_1_pokemon["Magneton"] = {
     name:"Magneton",
     ability:"Overgrow",
@@ -6265,7 +6176,6 @@ gen_1_pokemon["Magneton"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Farfetch'd"] = {
     name:"Farfetch'd",
@@ -6323,7 +6233,6 @@ gen_1_pokemon["Farfetch'd"] = {
     ]
 }
 
-
 gen_1_pokemon["Farfetch'd"] = {
     name:"Farfetch'd",
     ability:"Overgrow",
@@ -6379,7 +6288,6 @@ gen_1_pokemon["Farfetch'd"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Doduo"] = {
     name:"Doduo",
@@ -6437,7 +6345,6 @@ gen_1_pokemon["Doduo"] = {
     ]
 }
 
-
 gen_1_pokemon["Dodrio"] = {
     name:"Dodrio",
     ability:"Overgrow",
@@ -6493,7 +6400,6 @@ gen_1_pokemon["Dodrio"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Seel"] = {
     name:"Seel",
@@ -6551,7 +6457,6 @@ gen_1_pokemon["Seel"] = {
     ]
 }
 
-
 gen_1_pokemon["Dewgong"] = {
     name:"Dewgong",
     ability:"Overgrow",
@@ -6608,7 +6513,6 @@ gen_1_pokemon["Dewgong"] = {
     ]
 }
 
-
 gen_1_pokemon["Grimer"] = {
     name:"Grimer",
     ability:"Overgrow",
@@ -6664,7 +6568,6 @@ gen_1_pokemon["Grimer"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Grimer"] = {
     name:"Grimer",
@@ -6722,7 +6625,6 @@ gen_1_pokemon["Grimer"] = {
     ]
 }
 
-
 gen_1_pokemon["Muk"] = {
     name:"Muk",
     ability:"Overgrow",
@@ -6778,7 +6680,6 @@ gen_1_pokemon["Muk"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Muk"] = {
     name:"Muk",
@@ -6835,7 +6736,6 @@ gen_1_pokemon["Muk"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Shellder"] = {
     name:"Shellder",
@@ -6893,7 +6793,6 @@ gen_1_pokemon["Shellder"] = {
     ]
 }
 
-
 gen_1_pokemon["Cloyster"] = {
     name:"Cloyster",
     ability:"Overgrow",
@@ -6949,7 +6848,6 @@ gen_1_pokemon["Cloyster"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Gastly"] = {
     name:"Gastly",
@@ -7007,7 +6905,6 @@ gen_1_pokemon["Gastly"] = {
     ]
 }
 
-
 gen_1_pokemon["Haunter"] = {
     name:"Haunter",
     ability:"Overgrow",
@@ -7063,7 +6960,6 @@ gen_1_pokemon["Haunter"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Gengar"] = {
     name:"Gengar",
@@ -7121,7 +7017,6 @@ gen_1_pokemon["Gengar"] = {
     ]
 }
 
-
 gen_1_pokemon["Gengar"] = {
     name:"Gengar",
     ability:"Overgrow",
@@ -7177,7 +7072,6 @@ gen_1_pokemon["Gengar"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Onix"] = {
     name:"Onix",
@@ -7235,7 +7129,6 @@ gen_1_pokemon["Onix"] = {
     ]
 }
 
-
 gen_1_pokemon["Drowzee"] = {
     name:"Drowzee",
     ability:"Overgrow",
@@ -7291,7 +7184,6 @@ gen_1_pokemon["Drowzee"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Hypno"] = {
     name:"Hypno",
@@ -7349,7 +7241,6 @@ gen_1_pokemon["Hypno"] = {
     ]
 }
 
-
 gen_1_pokemon["Krabby"] = {
     name:"Krabby",
     ability:"Overgrow",
@@ -7405,7 +7296,6 @@ gen_1_pokemon["Krabby"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Kingler"] = {
     name:"Kingler",
@@ -7463,7 +7353,6 @@ gen_1_pokemon["Kingler"] = {
     ]
 }
 
-
 gen_1_pokemon["Voltorb"] = {
     name:"Voltorb",
     ability:"Overgrow",
@@ -7519,7 +7408,6 @@ gen_1_pokemon["Voltorb"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Electrode"] = {
     name:"Electrode",
@@ -7577,7 +7465,6 @@ gen_1_pokemon["Electrode"] = {
     ]
 }
 
-
 gen_1_pokemon["Exeggcute"] = {
     name:"Exeggcute",
     ability:"Overgrow",
@@ -7634,7 +7521,6 @@ gen_1_pokemon["Exeggcute"] = {
     ]
 }
 
-
 gen_1_pokemon["Exeggutor"] = {
     name:"Exeggutor",
     ability:"Overgrow",
@@ -7690,7 +7576,6 @@ gen_1_pokemon["Exeggutor"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Exeggutor"] = {
     name:"Exeggutor",
@@ -7748,7 +7633,6 @@ gen_1_pokemon["Exeggutor"] = {
     ]
 }
 
-
 gen_1_pokemon["Cubone"] = {
     name:"Cubone",
     ability:"Overgrow",
@@ -7805,7 +7689,6 @@ gen_1_pokemon["Cubone"] = {
     ]
 }
 
-
 gen_1_pokemon["Marowak"] = {
     name:"Marowak",
     ability:"Overgrow",
@@ -7861,7 +7744,6 @@ gen_1_pokemon["Marowak"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Marowak"] = {
     name:"Marowak",
@@ -7919,7 +7801,6 @@ gen_1_pokemon["Marowak"] = {
     ]
 }
 
-
 gen_1_pokemon["Hitmonlee"] = {
     name:"Hitmonlee",
     ability:"Overgrow",
@@ -7975,7 +7856,6 @@ gen_1_pokemon["Hitmonlee"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Hitmonchan"] = {
     name:"Hitmonchan",
@@ -8033,7 +7913,6 @@ gen_1_pokemon["Hitmonchan"] = {
     ]
 }
 
-
 gen_1_pokemon["Lickitung"] = {
     name:"Lickitung",
     ability:"Overgrow",
@@ -8089,7 +7968,6 @@ gen_1_pokemon["Lickitung"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Koffing"] = {
     name:"Koffing",
@@ -8147,7 +8025,6 @@ gen_1_pokemon["Koffing"] = {
     ]
 }
 
-
 gen_1_pokemon["Weezing"] = {
     name:"Weezing",
     ability:"Overgrow",
@@ -8203,7 +8080,6 @@ gen_1_pokemon["Weezing"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Weezing"] = {
     name:"Weezing",
@@ -8260,7 +8136,6 @@ gen_1_pokemon["Weezing"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Rhyhorn"] = {
     name:"Rhyhorn",
@@ -8318,7 +8193,6 @@ gen_1_pokemon["Rhyhorn"] = {
     ]
 }
 
-
 gen_1_pokemon["Rhydon"] = {
     name:"Rhydon",
     ability:"Overgrow",
@@ -8374,7 +8248,6 @@ gen_1_pokemon["Rhydon"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Chansey"] = {
     name:"Chansey",
@@ -8432,7 +8305,6 @@ gen_1_pokemon["Chansey"] = {
     ]
 }
 
-
 gen_1_pokemon["Tangela"] = {
     name:"Tangela",
     ability:"Overgrow",
@@ -8488,7 +8360,6 @@ gen_1_pokemon["Tangela"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Kangaskhan"] = {
     name:"Kangaskhan",
@@ -8546,7 +8417,6 @@ gen_1_pokemon["Kangaskhan"] = {
     ]
 }
 
-
 gen_1_pokemon["Kangaskhan"] = {
     name:"Kangaskhan",
     ability:"Overgrow",
@@ -8602,7 +8472,6 @@ gen_1_pokemon["Kangaskhan"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Horsea"] = {
     name:"Horsea",
@@ -8660,7 +8529,6 @@ gen_1_pokemon["Horsea"] = {
     ]
 }
 
-
 gen_1_pokemon["Seadra"] = {
     name:"Seadra",
     ability:"Overgrow",
@@ -8716,7 +8584,6 @@ gen_1_pokemon["Seadra"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Goldeen"] = {
     name:"Goldeen",
@@ -8774,7 +8641,6 @@ gen_1_pokemon["Goldeen"] = {
     ]
 }
 
-
 gen_1_pokemon["Seaking"] = {
     name:"Seaking",
     ability:"Overgrow",
@@ -8830,7 +8696,6 @@ gen_1_pokemon["Seaking"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Staryu"] = {
     name:"Staryu",
@@ -8888,7 +8753,6 @@ gen_1_pokemon["Staryu"] = {
     ]
 }
 
-
 gen_1_pokemon["Starmie"] = {
     name:"Starmie",
     ability:"Overgrow",
@@ -8944,7 +8808,6 @@ gen_1_pokemon["Starmie"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Mr. Mime"] = {
     name:"Mr. Mime",
@@ -9002,7 +8865,6 @@ gen_1_pokemon["Mr. Mime"] = {
     ]
 }
 
-
 gen_1_pokemon["Mr. Mime"] = {
     name:"Mr. Mime",
     ability:"Overgrow",
@@ -9058,7 +8920,6 @@ gen_1_pokemon["Mr. Mime"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Scyther"] = {
     name:"Scyther",
@@ -9116,7 +8977,6 @@ gen_1_pokemon["Scyther"] = {
     ]
 }
 
-
 gen_1_pokemon["Jynx"] = {
     name:"Jynx",
     ability:"Overgrow",
@@ -9172,7 +9032,6 @@ gen_1_pokemon["Jynx"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Electabuzz"] = {
     name:"Electabuzz",
@@ -9230,7 +9089,6 @@ gen_1_pokemon["Electabuzz"] = {
     ]
 }
 
-
 gen_1_pokemon["Magmar"] = {
     name:"Magmar",
     ability:"Overgrow",
@@ -9287,7 +9145,6 @@ gen_1_pokemon["Magmar"] = {
     ]
 }
 
-
 gen_1_pokemon["Pinsir"] = {
     name:"Pinsir",
     ability:"Overgrow",
@@ -9343,7 +9200,6 @@ gen_1_pokemon["Pinsir"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Pinsir"] = {
     name:"Pinsir",
@@ -9401,7 +9257,6 @@ gen_1_pokemon["Pinsir"] = {
     ]
 }
 
-
 gen_1_pokemon["Tauros"] = {
     name:"Tauros",
     ability:"Overgrow",
@@ -9457,7 +9312,6 @@ gen_1_pokemon["Tauros"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Magikarp"] = {
     name:"Magikarp",
@@ -9515,7 +9369,6 @@ gen_1_pokemon["Magikarp"] = {
     ]
 }
 
-
 gen_1_pokemon["Gyarados"] = {
     name:"Gyarados",
     ability:"Overgrow",
@@ -9571,7 +9424,6 @@ gen_1_pokemon["Gyarados"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Gyarados"] = {
     name:"Gyarados",
@@ -9629,7 +9481,6 @@ gen_1_pokemon["Gyarados"] = {
     ]
 }
 
-
 gen_1_pokemon["Lapras"] = {
     name:"Lapras",
     ability:"Overgrow",
@@ -9685,7 +9536,6 @@ gen_1_pokemon["Lapras"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Ditto"] = {
     name:"Ditto",
@@ -9743,7 +9593,6 @@ gen_1_pokemon["Ditto"] = {
     ]
 }
 
-
 gen_1_pokemon["Eevee"] = {
     name:"Eevee",
     ability:"Overgrow",
@@ -9799,7 +9648,6 @@ gen_1_pokemon["Eevee"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Eevee"] = {
     name:"Eevee",
@@ -9857,7 +9705,6 @@ gen_1_pokemon["Eevee"] = {
     ]
 }
 
-
 gen_1_pokemon["Vaporeon"] = {
     name:"Vaporeon",
     ability:"Overgrow",
@@ -9913,7 +9760,6 @@ gen_1_pokemon["Vaporeon"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Jolteon"] = {
     name:"Jolteon",
@@ -9971,7 +9817,6 @@ gen_1_pokemon["Jolteon"] = {
     ]
 }
 
-
 gen_1_pokemon["Flareon"] = {
     name:"Flareon",
     ability:"Overgrow",
@@ -10027,7 +9872,6 @@ gen_1_pokemon["Flareon"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Porygon"] = {
     name:"Porygon",
@@ -10085,7 +9929,6 @@ gen_1_pokemon["Porygon"] = {
     ]
 }
 
-
 gen_1_pokemon["Omanyte"] = {
     name:"Omanyte",
     ability:"Overgrow",
@@ -10141,7 +9984,6 @@ gen_1_pokemon["Omanyte"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Omastar"] = {
     name:"Omastar",
@@ -10199,7 +10041,6 @@ gen_1_pokemon["Omastar"] = {
     ]
 }
 
-
 gen_1_pokemon["Kabuto"] = {
     name:"Kabuto",
     ability:"Overgrow",
@@ -10255,7 +10096,6 @@ gen_1_pokemon["Kabuto"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Kabutops"] = {
     name:"Kabutops",
@@ -10313,7 +10153,6 @@ gen_1_pokemon["Kabutops"] = {
     ]
 }
 
-
 gen_1_pokemon["Aerodactyl"] = {
     name:"Aerodactyl",
     ability:"Overgrow",
@@ -10369,7 +10208,6 @@ gen_1_pokemon["Aerodactyl"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Aerodactyl"] = {
     name:"Aerodactyl",
@@ -10427,7 +10265,6 @@ gen_1_pokemon["Aerodactyl"] = {
     ]
 }
 
-
 gen_1_pokemon["Snorlax"] = {
     name:"Snorlax",
     ability:"Overgrow",
@@ -10483,7 +10320,6 @@ gen_1_pokemon["Snorlax"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Articuno"] = {
     name:"Articuno",
@@ -10541,7 +10377,6 @@ gen_1_pokemon["Articuno"] = {
     ]
 }
 
-
 gen_1_pokemon["Articuno"] = {
     name:"Articuno",
     ability:"Overgrow",
@@ -10597,7 +10432,6 @@ gen_1_pokemon["Articuno"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Zapdos"] = {
     name:"Zapdos",
@@ -10655,7 +10489,6 @@ gen_1_pokemon["Zapdos"] = {
     ]
 }
 
-
 gen_1_pokemon["Zapdos"] = {
     name:"Zapdos",
     ability:"Overgrow",
@@ -10711,7 +10544,6 @@ gen_1_pokemon["Zapdos"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Moltres"] = {
     name:"Moltres",
@@ -10769,7 +10601,6 @@ gen_1_pokemon["Moltres"] = {
     ]
 }
 
-
 gen_1_pokemon["Moltres"] = {
     name:"Moltres",
     ability:"Overgrow",
@@ -10825,7 +10656,6 @@ gen_1_pokemon["Moltres"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Dratini"] = {
     name:"Dratini",
@@ -10883,7 +10713,6 @@ gen_1_pokemon["Dratini"] = {
     ]
 }
 
-
 gen_1_pokemon["Dragonair"] = {
     name:"Dragonair",
     ability:"Overgrow",
@@ -10939,7 +10768,6 @@ gen_1_pokemon["Dragonair"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Dragonite"] = {
     name:"Dragonite",
@@ -10997,7 +10825,6 @@ gen_1_pokemon["Dragonite"] = {
     ]
 }
 
-
 gen_1_pokemon["Mewtwo"] = {
     name:"Mewtwo",
     ability:"Overgrow",
@@ -11053,7 +10880,6 @@ gen_1_pokemon["Mewtwo"] = {
         }
     ]
 }
-
 
 gen_1_pokemon["Mewtwo"] = {
     name:"Mewtwo",
@@ -11111,7 +10937,6 @@ gen_1_pokemon["Mewtwo"] = {
     ]
 }
 
-
 gen_1_pokemon["Mewtwo"] = {
     name:"Mewtwo",
     ability:"Overgrow",
@@ -11168,7 +10993,6 @@ gen_1_pokemon["Mewtwo"] = {
     ]
 }
 
-
 gen_1_pokemon["Mew"] = {
     name:"Mew",
     ability:"Overgrow",
@@ -11224,4 +11048,3 @@ gen_1_pokemon["Mew"] = {
         }
     ]
 }
-

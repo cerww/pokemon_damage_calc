@@ -50,7 +50,8 @@ export class CalculationPane extends React.Component<{
     onSelectPokemon: (a: number) => any,
     onMoveSelect: (a: pokemon, b: pokemon, f: pokemon_field, m: move) => any,
     onNewPokemon: () => void,
-    calculateDamage: (a: pokemon, b: pokemon, c: pokemon_side, d: pokemon_side, e: pokemon_field, m: move) => number[]
+    calculateDamage: (a: pokemon, b: pokemon, c: pokemon_side, d: pokemon_side, e: pokemon_field, m: move) => number[],
+    selected_pokemon_idx: number
 }> {
 
     render() {
@@ -81,11 +82,6 @@ export class CalculationPane extends React.Component<{
                     )
                 );
                 return wat;
-
-                let rows = [];
-
-                rows = rows.concat(wat);
-                return rows;
             }
         );
 
@@ -109,7 +105,9 @@ export class CalculationPane extends React.Component<{
                             <div id={"pokemonSideHeader"}
                                  style={{gridRow: `span ${pkm.moves.length}`}}
                                  onClick={() => this.props.onSelectPokemon(idx)}
-                                 className={idx % 2 ? "oddCalcRow" : "evenCalcRow"}
+                                 className={`
+                                 ${idx % 2 ? "oddCalcRow" : "evenCalcRow"} 
+                                 ${this.props.selected_pokemon_idx === idx ? "selected_pokemon_cell" : ""}`}
                             >
                                 <div>
                                     {(() => {
@@ -337,7 +335,8 @@ function useTeam(init_team: pokemon[]) {
             case "modify_pokemon_extra_data": {
                 let ret = [...a];
                 a[b.idx] = {
-                    ...a[b.idx], extra_data: {
+                    ...a[b.idx],
+                    extra_data: {
                         ...(a[b.idx].extra_data ?? {}),
                         ...b.extra_data_to_merge
                     }
@@ -372,10 +371,10 @@ function statBoostsOptions() {
 function MyButton(props: any) {
     return <div className={"notAButton" + (props.enabled ? " enabledButton" : "")}
                 {...props}
-                onClick={(e) => {
+                onClick={(e) =>
                     (props.onClick ?? (() => {
-                    }))(e, props.enabled);
-                }}
+                    }))(e, props.enabled)
+                }
     >
         {props.children}
     </div>
@@ -499,7 +498,7 @@ export function PokemonCalc(props: {
                                 changeField({weather: "Clear"})
                             }}
                             enabled={field.weather === "Clear"}>
-                            &nbsp;&nbsp;Clear&nbsp;&nbsp;
+                            &nbsp;&nbsp;Clear Weather&nbsp;&nbsp;
                         </MyButton>
                         <MyButton
                             onClick={() => {
@@ -556,6 +555,28 @@ export function PokemonCalc(props: {
                         </MyButton>
                     </div>
                 </Centered>
+                <div style={{marginTop: "5px"}}>
+                    <Centered>
+                        <MyButton onClick={(a: any, e: boolean) => {
+                            changeField({dark_aura: !e});
+                        }}
+                                  enabled={field.dark_aura}>
+                            Dark Aura
+                        </MyButton>
+                        <MyButton onClick={(a: any, e: boolean) => {
+                            changeField({fairy_aura: !e});
+                        }}
+                                  enabled={field.fairy_aura}>
+                            Fairy Aura
+                        </MyButton>
+                        <MyButton onClick={(a: any, e: boolean) => {
+                            changeField({aura_break: !e});
+                        }}
+                                  enabled={field.aura_break}>
+                            Aura Break
+                        </MyButton>
+                    </Centered>
+                </div>
             </div>
             <hr/>
             <div hidden>2 sides each</div>
@@ -851,22 +872,47 @@ export function PokemonCalc(props: {
         let idx = isLeftSide ? left_side_idx : right_side_idx;
         const hp_percent = pkm.current_hp / calculateActualStat(pkm, "hp");
         return <div className={"modifyPokemonTab"}>
-            <div id="dropDownChangesPokemon">
-                <div className={"SelectorLabel"} style={{fontSize: "12px"}}/>
-                <select>
-                    <option>{pkm.name}</option>
-                    {Object.keys(pokemons).map((a) => <option value={a} onClick={(e) => {
-                        cb({
-                            action: "modify_pokemon",
-                            idx,
-                            modified_pokemon: pokemons[a]
-                        });
-                    }}>{a}</option>)}
-                </select>
+            <div id="dropDownChangesPokemon" style={{position: "relative"}}>
+                <div className={"SelectorLabel"}/>
+                <div style={{display: "flex"}}>
+                    <select>
+                        <option>{pkm.name}</option>
+                        {Object.keys(pokemons).map((a) =>
+                            <option value={a} onClick={(e) => {
+                                cb({
+                                    action: "modify_pokemon",
+                                    idx,
+                                    modified_pokemon: pokemons[a]
+                                });
+                            }}>{a}
+                            </option>
+                        )
+                        }
+                    </select>
+                    <div style={{position: "absolute", right: "1em"}}>
+                        <div onClick={() => {
+                            if (isLeftSide ? left_team.length > 1 : right_team.length > 1) {
+                                cb({
+                                    action: "remove_pokemon",
+                                    idx
+                                });
+                                if (isLeftSide) {
+                                    set_left_idx(Math.max(idx - 1, 0))
+                                } else {
+                                    set_right_idx(Math.max(idx - 1, 0));
+                                }
+                            }
+                        }}
+                             className={`remove_pokemon_button${(isLeftSide ? left_team.length > 1 : right_team.length > 1) ? '' : " grayedOut"}`}
+                        >
+                            X
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="resetButton"></div>
             <div id="nickname">
-                <div className={"SelectorLabel"} style={{fontSize: "12px"}}>Nick:</div>
+                <div className={"SelectorLabel"}>Nick:</div>
                 <input value={pkm.nickname ?? pkm.name} onChange={(e) => {
                     cb({
                         action: "modify_pokemon",
@@ -893,11 +939,10 @@ export function PokemonCalc(props: {
                         });
                     }} defaultValue={pkm.type1}>
                         {
-                            listOftypes.map((typeName) => {
-                                return <option value={typeName as string} key={typeName as string}>{typeName}</option>
-                            })
+                            listOftypes.map((typeName) =>
+                                <option value={typeName as string} key={typeName as string}>{typeName}</option>
+                            )
                         }
-
                     </select>
                 </div>
                 <div id="type2">
@@ -918,7 +963,10 @@ export function PokemonCalc(props: {
                 </div>
             </div>
 
-            <div id="formeSelector"></div>
+            <div id="formeSelector">
+
+            </div>
+
             <div className={"genderThing"}>
                 <div className={"SelectorLabel"}>Gender:</div>
                 <select onChange={(e) => {
@@ -1528,7 +1576,8 @@ export function PokemonCalc(props: {
                                 move_idx
                             });
                         } : () => {
-                        }}
+                        }
+                        }
                              className={"removeMoveButton" + (pkm.moves.length === 1 ? " grayedOut" : "")}>
                             X
                         </div>
@@ -1574,7 +1623,8 @@ export function PokemonCalc(props: {
                                      set_left_idx(left_team.length);
                                      set_middle_part_idx(0);
                                  }}
-                                 calculateDamage={() => []}
+                                 calculateDamage={calculateDamage}
+                                 selected_pokemon_idx={left_side_idx}
                 />
             </div>
             <div id="middlePart" key={"middle" + middle_part_idx}>
@@ -1613,7 +1663,8 @@ export function PokemonCalc(props: {
                                      set_right_idx(right_team.length);
                                      set_middle_part_idx(2);
                                  }}
-                                 calculateDamage={() => []}
+                                 calculateDamage={calculateDamage}
+                                 selected_pokemon_idx={right_side_idx}
                 />
             </div>
 

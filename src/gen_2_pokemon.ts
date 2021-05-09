@@ -2,12 +2,10 @@ import {pokemon} from "./pokemon"
 
 export let gen_2_pokemon: { [key: string]: pokemon } = {};
 
-
 gen_2_pokemon["Chikorita"] = {
     name: "Chikorita",
     ability: "Overgrow",
     type1: "Grass",
-
 
     gender: "Male",
     status: "Healthy",
@@ -59,12 +57,10 @@ gen_2_pokemon["Chikorita"] = {
     ]
 }
 
-
 gen_2_pokemon["Bayleef"] = {
     name: "Bayleef",
     ability: "Overgrow",
     type1: "Grass",
-
 
     gender: "Male",
     status: "Healthy",
@@ -116,12 +112,10 @@ gen_2_pokemon["Bayleef"] = {
     ]
 }
 
-
 gen_2_pokemon["Meganium"] = {
     name: "Meganium",
     ability: "Overgrow",
     type1: "Grass",
-
 
     gender: "Male",
     status: "Healthy",
@@ -173,12 +167,10 @@ gen_2_pokemon["Meganium"] = {
     ]
 }
 
-
 gen_2_pokemon["Cyndaquil"] = {
     name: "Cyndaquil",
     ability: "Overgrow",
     type1: "Fire",
-
 
     gender: "Male",
     status: "Healthy",
@@ -230,12 +222,10 @@ gen_2_pokemon["Cyndaquil"] = {
     ]
 }
 
-
 gen_2_pokemon["Quilava"] = {
     name: "Quilava",
     ability: "Overgrow",
     type1: "Fire",
-
 
     gender: "Male",
     status: "Healthy",
@@ -287,12 +277,10 @@ gen_2_pokemon["Quilava"] = {
     ]
 }
 
-
 gen_2_pokemon["Typhlosion"] = {
     name: "Typhlosion",
     ability: "Overgrow",
     type1: "Fire",
-
 
     gender: "Male",
     status: "Healthy",
@@ -344,12 +332,10 @@ gen_2_pokemon["Typhlosion"] = {
     ]
 }
 
-
 gen_2_pokemon["Totodile"] = {
     name: "Totodile",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -401,12 +387,10 @@ gen_2_pokemon["Totodile"] = {
     ]
 }
 
-
 gen_2_pokemon["Croconaw"] = {
     name: "Croconaw",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -458,12 +442,10 @@ gen_2_pokemon["Croconaw"] = {
     ]
 }
 
-
 gen_2_pokemon["Feraligatr"] = {
     name: "Feraligatr",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -515,12 +497,10 @@ gen_2_pokemon["Feraligatr"] = {
     ]
 }
 
-
 gen_2_pokemon["Sentret"] = {
     name: "Sentret",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -572,12 +552,10 @@ gen_2_pokemon["Sentret"] = {
     ]
 }
 
-
 gen_2_pokemon["Furret"] = {
     name: "Furret",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -628,7 +606,6 @@ gen_2_pokemon["Furret"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Hoothoot"] = {
     name: "Hoothoot",
@@ -686,7 +663,6 @@ gen_2_pokemon["Hoothoot"] = {
     ]
 }
 
-
 gen_2_pokemon["Noctowl"] = {
     name: "Noctowl",
     ability: "Overgrow",
@@ -742,7 +718,6 @@ gen_2_pokemon["Noctowl"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Ledyba"] = {
     name: "Ledyba",
@@ -800,7 +775,6 @@ gen_2_pokemon["Ledyba"] = {
     ]
 }
 
-
 gen_2_pokemon["Ledian"] = {
     name: "Ledian",
     ability: "Overgrow",
@@ -856,7 +830,6 @@ gen_2_pokemon["Ledian"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Spinarak"] = {
     name: "Spinarak",
@@ -914,7 +887,6 @@ gen_2_pokemon["Spinarak"] = {
     ]
 }
 
-
 gen_2_pokemon["Ariados"] = {
     name: "Ariados",
     ability: "Overgrow",
@@ -970,7 +942,6 @@ gen_2_pokemon["Ariados"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Crobat"] = {
     name: "Crobat",
@@ -1028,7 +999,6 @@ gen_2_pokemon["Crobat"] = {
     ]
 }
 
-
 gen_2_pokemon["Chinchou"] = {
     name: "Chinchou",
     ability: "Overgrow",
@@ -1084,7 +1054,6 @@ gen_2_pokemon["Chinchou"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Lanturn"] = {
     name: "Lanturn",
@@ -1142,12 +1111,10 @@ gen_2_pokemon["Lanturn"] = {
     ]
 }
 
-
 gen_2_pokemon["Pichu"] = {
     name: "Pichu",
     ability: "Overgrow",
     type1: "Electric",
-
 
     gender: "Male",
     status: "Healthy",
@@ -1198,7 +1165,6 @@ gen_2_pokemon["Pichu"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Cleffa"] = {
     name: "Cleffa",
@@ -1254,7 +1220,6 @@ gen_2_pokemon["Cleffa"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Igglybuff"] = {
     name: "Igglybuff",
@@ -1312,7 +1277,6 @@ gen_2_pokemon["Igglybuff"] = {
     ]
 }
 
-
 gen_2_pokemon["Togepi"] = {
     name: "Togepi",
     ability: "Overgrow",
@@ -1367,7 +1331,6 @@ gen_2_pokemon["Togepi"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Togetic"] = {
     name: "Togetic",
@@ -1425,7 +1388,6 @@ gen_2_pokemon["Togetic"] = {
     ]
 }
 
-
 gen_2_pokemon["Natu"] = {
     name: "Natu",
     ability: "Overgrow",
@@ -1481,7 +1443,6 @@ gen_2_pokemon["Natu"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Xatu"] = {
     name: "Xatu",
@@ -1539,12 +1500,10 @@ gen_2_pokemon["Xatu"] = {
     ]
 }
 
-
 gen_2_pokemon["Mareep"] = {
     name: "Mareep",
     ability: "Overgrow",
     type1: "Electric",
-
 
     gender: "Male",
     status: "Healthy",
@@ -1596,12 +1555,10 @@ gen_2_pokemon["Mareep"] = {
     ]
 }
 
-
 gen_2_pokemon["Flaaffy"] = {
     name: "Flaaffy",
     ability: "Overgrow",
     type1: "Electric",
-
 
     gender: "Male",
     status: "Healthy",
@@ -1653,12 +1610,10 @@ gen_2_pokemon["Flaaffy"] = {
     ]
 }
 
-
 gen_2_pokemon["Ampharos"] = {
     name: "Ampharos",
     ability: "Overgrow",
     type1: "Electric",
-
 
     gender: "Male",
     status: "Healthy",
@@ -1709,7 +1664,6 @@ gen_2_pokemon["Ampharos"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Ampharos"] = {
     name: "Ampharos",
@@ -1767,12 +1721,10 @@ gen_2_pokemon["Ampharos"] = {
     ]
 }
 
-
 gen_2_pokemon["Bellossom"] = {
     name: "Bellossom",
     ability: "Overgrow",
     type1: "Grass",
-
 
     gender: "Male",
     status: "Healthy",
@@ -1823,7 +1775,6 @@ gen_2_pokemon["Bellossom"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Marill"] = {
     name: "Marill",
@@ -1881,7 +1832,6 @@ gen_2_pokemon["Marill"] = {
     ]
 }
 
-
 gen_2_pokemon["Azumarill"] = {
     name: "Azumarill",
     ability: "Overgrow",
@@ -1938,12 +1888,10 @@ gen_2_pokemon["Azumarill"] = {
     ]
 }
 
-
 gen_2_pokemon["Sudowoodo"] = {
     name: "Sudowoodo",
     ability: "Overgrow",
     type1: "Rock",
-
 
     gender: "Male",
     status: "Healthy",
@@ -1995,12 +1943,10 @@ gen_2_pokemon["Sudowoodo"] = {
     ]
 }
 
-
 gen_2_pokemon["Politoed"] = {
     name: "Politoed",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2051,7 +1997,6 @@ gen_2_pokemon["Politoed"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Hoppip"] = {
     name: "Hoppip",
@@ -2109,7 +2054,6 @@ gen_2_pokemon["Hoppip"] = {
     ]
 }
 
-
 gen_2_pokemon["Skiploom"] = {
     name: "Skiploom",
     ability: "Overgrow",
@@ -2165,7 +2109,6 @@ gen_2_pokemon["Skiploom"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Jumpluff"] = {
     name: "Jumpluff",
@@ -2223,12 +2166,10 @@ gen_2_pokemon["Jumpluff"] = {
     ]
 }
 
-
 gen_2_pokemon["Aipom"] = {
     name: "Aipom",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2280,12 +2221,10 @@ gen_2_pokemon["Aipom"] = {
     ]
 }
 
-
 gen_2_pokemon["Sunkern"] = {
     name: "Sunkern",
     ability: "Overgrow",
     type1: "Grass",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2337,12 +2276,10 @@ gen_2_pokemon["Sunkern"] = {
     ]
 }
 
-
 gen_2_pokemon["Sunflora"] = {
     name: "Sunflora",
     ability: "Overgrow",
     type1: "Grass",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2393,7 +2330,6 @@ gen_2_pokemon["Sunflora"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Yanma"] = {
     name: "Yanma",
@@ -2451,7 +2387,6 @@ gen_2_pokemon["Yanma"] = {
     ]
 }
 
-
 gen_2_pokemon["Wooper"] = {
     name: "Wooper",
     ability: "Overgrow",
@@ -2507,7 +2442,6 @@ gen_2_pokemon["Wooper"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Quagsire"] = {
     name: "Quagsire",
@@ -2565,12 +2499,10 @@ gen_2_pokemon["Quagsire"] = {
     ]
 }
 
-
 gen_2_pokemon["Espeon"] = {
     name: "Espeon",
     ability: "Overgrow",
     type1: "Psychic",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2622,12 +2554,10 @@ gen_2_pokemon["Espeon"] = {
     ]
 }
 
-
 gen_2_pokemon["Umbreon"] = {
     name: "Umbreon",
     ability: "Overgrow",
     type1: "Dark",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2678,7 +2608,6 @@ gen_2_pokemon["Umbreon"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Murkrow"] = {
     name: "Murkrow",
@@ -2736,7 +2665,6 @@ gen_2_pokemon["Murkrow"] = {
     ]
 }
 
-
 gen_2_pokemon["Slowking"] = {
     name: "Slowking",
     ability: "Overgrow",
@@ -2792,7 +2720,6 @@ gen_2_pokemon["Slowking"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Slowking"] = {
     name: "Slowking",
@@ -2850,12 +2777,10 @@ gen_2_pokemon["Slowking"] = {
     ]
 }
 
-
 gen_2_pokemon["Misdreavus"] = {
     name: "Misdreavus",
     ability: "Overgrow",
     type1: "Ghost",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2907,12 +2832,10 @@ gen_2_pokemon["Misdreavus"] = {
     ]
 }
 
-
 gen_2_pokemon["Unown"] = {
     name: "Unown",
     ability: "Overgrow",
     type1: "Psychic",
-
 
     gender: "Male",
     status: "Healthy",
@@ -2964,12 +2887,10 @@ gen_2_pokemon["Unown"] = {
     ]
 }
 
-
 gen_2_pokemon["Wobbuffet"] = {
     name: "Wobbuffet",
     ability: "Overgrow",
     type1: "Psychic",
-
 
     gender: "Male",
     status: "Healthy",
@@ -3020,7 +2941,6 @@ gen_2_pokemon["Wobbuffet"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Girafarig"] = {
     name: "Girafarig",
@@ -3078,12 +2998,10 @@ gen_2_pokemon["Girafarig"] = {
     ]
 }
 
-
 gen_2_pokemon["Pineco"] = {
     name: "Pineco",
     ability: "Overgrow",
     type1: "Bug",
-
 
     gender: "Male",
     status: "Healthy",
@@ -3134,7 +3052,6 @@ gen_2_pokemon["Pineco"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Forretress"] = {
     name: "Forretress",
@@ -3192,12 +3109,10 @@ gen_2_pokemon["Forretress"] = {
     ]
 }
 
-
 gen_2_pokemon["Dunsparce"] = {
     name: "Dunsparce",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -3248,7 +3163,6 @@ gen_2_pokemon["Dunsparce"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Gligar"] = {
     name: "Gligar",
@@ -3306,7 +3220,6 @@ gen_2_pokemon["Gligar"] = {
     ]
 }
 
-
 gen_2_pokemon["Steelix"] = {
     name: "Steelix",
     ability: "Overgrow",
@@ -3362,7 +3275,6 @@ gen_2_pokemon["Steelix"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Steelix"] = {
     name: "Steelix",
@@ -3420,12 +3332,10 @@ gen_2_pokemon["Steelix"] = {
     ]
 }
 
-
 gen_2_pokemon["Snubbull"] = {
     name: "Snubbull",
     ability: "Overgrow",
     type1: "Fairy",
-
 
     gender: "Male",
     status: "Healthy",
@@ -3477,12 +3387,10 @@ gen_2_pokemon["Snubbull"] = {
     ]
 }
 
-
 gen_2_pokemon["Granbull"] = {
     name: "Granbull",
     ability: "Overgrow",
     type1: "Fairy",
-
 
     gender: "Male",
     status: "Healthy",
@@ -3533,7 +3441,6 @@ gen_2_pokemon["Granbull"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Qwilfish"] = {
     name: "Qwilfish",
@@ -3591,7 +3498,6 @@ gen_2_pokemon["Qwilfish"] = {
     ]
 }
 
-
 gen_2_pokemon["Scizor"] = {
     name: "Scizor",
     ability: "Overgrow",
@@ -3647,7 +3553,6 @@ gen_2_pokemon["Scizor"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Scizor"] = {
     name: "Scizor",
@@ -3705,7 +3610,6 @@ gen_2_pokemon["Scizor"] = {
     ]
 }
 
-
 gen_2_pokemon["Shuckle"] = {
     name: "Shuckle",
     ability: "Overgrow",
@@ -3761,7 +3665,6 @@ gen_2_pokemon["Shuckle"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Heracross"] = {
     name: "Heracross",
@@ -3819,7 +3722,6 @@ gen_2_pokemon["Heracross"] = {
     ]
 }
 
-
 gen_2_pokemon["Heracross"] = {
     name: "Heracross",
     ability: "Overgrow",
@@ -3875,7 +3777,6 @@ gen_2_pokemon["Heracross"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Sneasel"] = {
     name: "Sneasel",
@@ -3933,12 +3834,10 @@ gen_2_pokemon["Sneasel"] = {
     ]
 }
 
-
 gen_2_pokemon["Teddiursa"] = {
     name: "Teddiursa",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -3990,12 +3889,10 @@ gen_2_pokemon["Teddiursa"] = {
     ]
 }
 
-
 gen_2_pokemon["Ursaring"] = {
     name: "Ursaring",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -4047,12 +3944,10 @@ gen_2_pokemon["Ursaring"] = {
     ]
 }
 
-
 gen_2_pokemon["Slugma"] = {
     name: "Slugma",
     ability: "Overgrow",
     type1: "Fire",
-
 
     gender: "Male",
     status: "Healthy",
@@ -4103,7 +3998,6 @@ gen_2_pokemon["Slugma"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Magcargo"] = {
     name: "Magcargo",
@@ -4161,7 +4055,6 @@ gen_2_pokemon["Magcargo"] = {
     ]
 }
 
-
 gen_2_pokemon["Swinub"] = {
     name: "Swinub",
     ability: "Overgrow",
@@ -4217,7 +4110,6 @@ gen_2_pokemon["Swinub"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Piloswine"] = {
     name: "Piloswine",
@@ -4275,7 +4167,6 @@ gen_2_pokemon["Piloswine"] = {
     ]
 }
 
-
 gen_2_pokemon["Corsola"] = {
     name: "Corsola",
     ability: "Overgrow",
@@ -4332,12 +4223,10 @@ gen_2_pokemon["Corsola"] = {
     ]
 }
 
-
 gen_2_pokemon["Corsola"] = {
     name: "Corsola",
     ability: "Overgrow",
     type1: "Ghost",
-
 
     gender: "Male",
     status: "Healthy",
@@ -4389,12 +4278,10 @@ gen_2_pokemon["Corsola"] = {
     ]
 }
 
-
 gen_2_pokemon["Remoraid"] = {
     name: "Remoraid",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -4446,12 +4333,10 @@ gen_2_pokemon["Remoraid"] = {
     ]
 }
 
-
 gen_2_pokemon["Octillery"] = {
     name: "Octillery",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -4502,7 +4387,6 @@ gen_2_pokemon["Octillery"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Delibird"] = {
     name: "Delibird",
@@ -4560,7 +4444,6 @@ gen_2_pokemon["Delibird"] = {
     ]
 }
 
-
 gen_2_pokemon["Mantine"] = {
     name: "Mantine",
     ability: "Overgrow",
@@ -4616,7 +4499,6 @@ gen_2_pokemon["Mantine"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Skarmory"] = {
     name: "Skarmory",
@@ -4674,7 +4556,6 @@ gen_2_pokemon["Skarmory"] = {
     ]
 }
 
-
 gen_2_pokemon["Houndour"] = {
     name: "Houndour",
     ability: "Overgrow",
@@ -4730,7 +4611,6 @@ gen_2_pokemon["Houndour"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Houndoom"] = {
     name: "Houndoom",
@@ -4788,7 +4668,6 @@ gen_2_pokemon["Houndoom"] = {
     ]
 }
 
-
 gen_2_pokemon["Houndoom"] = {
     name: "Houndoom",
     ability: "Overgrow",
@@ -4844,7 +4723,6 @@ gen_2_pokemon["Houndoom"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Kingdra"] = {
     name: "Kingdra",
@@ -4902,12 +4780,10 @@ gen_2_pokemon["Kingdra"] = {
     ]
 }
 
-
 gen_2_pokemon["Phanpy"] = {
     name: "Phanpy",
     ability: "Overgrow",
     type1: "Ground",
-
 
     gender: "Male",
     status: "Healthy",
@@ -4959,12 +4835,10 @@ gen_2_pokemon["Phanpy"] = {
     ]
 }
 
-
 gen_2_pokemon["Donphan"] = {
     name: "Donphan",
     ability: "Overgrow",
     type1: "Ground",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5016,12 +4890,10 @@ gen_2_pokemon["Donphan"] = {
     ]
 }
 
-
 gen_2_pokemon["Porygon2"] = {
     name: "Porygon2",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5073,12 +4945,10 @@ gen_2_pokemon["Porygon2"] = {
     ]
 }
 
-
 gen_2_pokemon["Stantler"] = {
     name: "Stantler",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5130,12 +5000,10 @@ gen_2_pokemon["Stantler"] = {
     ]
 }
 
-
 gen_2_pokemon["Smeargle"] = {
     name: "Smeargle",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5187,12 +5055,10 @@ gen_2_pokemon["Smeargle"] = {
     ]
 }
 
-
 gen_2_pokemon["Tyrogue"] = {
     name: "Tyrogue",
     ability: "Overgrow",
     type1: "Fighting",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5244,12 +5110,10 @@ gen_2_pokemon["Tyrogue"] = {
     ]
 }
 
-
 gen_2_pokemon["Hitmontop"] = {
     name: "Hitmontop",
     ability: "Overgrow",
     type1: "Fighting",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5300,7 +5164,6 @@ gen_2_pokemon["Hitmontop"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Smoochum"] = {
     name: "Smoochum",
@@ -5358,12 +5221,10 @@ gen_2_pokemon["Smoochum"] = {
     ]
 }
 
-
 gen_2_pokemon["Elekid"] = {
     name: "Elekid",
     ability: "Overgrow",
     type1: "Electric",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5415,12 +5276,10 @@ gen_2_pokemon["Elekid"] = {
     ]
 }
 
-
 gen_2_pokemon["Magby"] = {
     name: "Magby",
     ability: "Overgrow",
     type1: "Fire",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5472,12 +5331,10 @@ gen_2_pokemon["Magby"] = {
     ]
 }
 
-
 gen_2_pokemon["Miltank"] = {
     name: "Miltank",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5529,12 +5386,10 @@ gen_2_pokemon["Miltank"] = {
     ]
 }
 
-
 gen_2_pokemon["Blissey"] = {
     name: "Blissey",
     ability: "Overgrow",
     type1: "Normal",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5586,12 +5441,10 @@ gen_2_pokemon["Blissey"] = {
     ]
 }
 
-
 gen_2_pokemon["Raikou"] = {
     name: "Raikou",
     ability: "Overgrow",
     type1: "Electric",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5643,12 +5496,10 @@ gen_2_pokemon["Raikou"] = {
     ]
 }
 
-
 gen_2_pokemon["Entei"] = {
     name: "Entei",
     ability: "Overgrow",
     type1: "Fire",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5700,12 +5551,10 @@ gen_2_pokemon["Entei"] = {
     ]
 }
 
-
 gen_2_pokemon["Suicune"] = {
     name: "Suicune",
     ability: "Overgrow",
     type1: "Water",
-
 
     gender: "Male",
     status: "Healthy",
@@ -5756,7 +5605,6 @@ gen_2_pokemon["Suicune"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Larvitar"] = {
     name: "Larvitar",
@@ -5814,7 +5662,6 @@ gen_2_pokemon["Larvitar"] = {
     ]
 }
 
-
 gen_2_pokemon["Pupitar"] = {
     name: "Pupitar",
     ability: "Overgrow",
@@ -5870,7 +5717,6 @@ gen_2_pokemon["Pupitar"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Tyranitar"] = {
     name: "Tyranitar",
@@ -5928,7 +5774,6 @@ gen_2_pokemon["Tyranitar"] = {
     ]
 }
 
-
 gen_2_pokemon["Tyranitar"] = {
     name: "Tyranitar",
     ability: "Overgrow",
@@ -5984,7 +5829,6 @@ gen_2_pokemon["Tyranitar"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Lugia"] = {
     name: "Lugia",
@@ -6042,7 +5886,6 @@ gen_2_pokemon["Lugia"] = {
     ]
 }
 
-
 gen_2_pokemon["Ho-oh"] = {
     name: "Ho-oh",
     ability: "Overgrow",
@@ -6098,7 +5941,6 @@ gen_2_pokemon["Ho-oh"] = {
         }
     ]
 }
-
 
 gen_2_pokemon["Celebi"] = {
     name: "Celebi",

@@ -8,15 +8,449 @@ import {
     poke_round,
     pokemon_type, move_name, move_type, item, calculateStatNoBoost
 } from "./pokemon";
-import {type} from "os";
+import {pokemon_weights} from "./pokemon_weights";
 
 
-let pokemon_weights: { [key: string]: number } = {};
+const sheer_force_moves: Set<move_name> = new Set([
+    "Air Slash",
+    "Ancient Power",
+    "Astonish",
+    "Bite",
+    "Blizzard",
+    "Body Slam",
+    "Breaking Swipe",
+    "Bubble",
+    "Bubble Beam",
+    "Bulldoze",
+    "Burning Jealousy",
+    "Charge Beam",
+    "Confusion",
+    "Crunch",
+    "Crush Claw",
+    "Dark Pulse",
+    "Dragon Rush",
+    "Dragon Breath",
+    "Dynamic Punch",
+    "Earth Power",
+    "Ember",
+    "Extrasensory",
+    "Fake Out",
+    "Fire Blast",
+    "Fire Fang",
+    "Fire Punch",
+    "Flame Charge",
+    "Flame Wheel",
+    "Flamethrower",
+    "Flare Blitz",
+    "Flash Cannon",
+    "Focus Blast",
+    "Force Palm",
+    "Gunk Shot",
+    "Headbutt",
+    "Heat Wave",
+    "Hurricane",
+    "Ice Beam",
+    "Ice Fang",
+    "Ice Punch",
+    "Icy Wind",
+    "Iron Head",
+    "Iron Tail",
+    "Lava Plume",
+    "Liquidation",
+    "Low Sweep",
+    "Metal Claw",
+    "Mud Bomb",
+    "Mud Shot",
+    "Mud-Slap",
+    "Mystical Fire",
+    "Play Rough",
+    "Poison Fang",
+    "Poison Jab",
+    "Poison Sting",
+    "Poison Tail",
+    "Power-Up Punch",
+    "Psychic",
+    "Razor Shell",
+    "Rock Climb",
+    "Rock Slide",
+    "Rock Smash",
+    "Rock Tomb",
+    "Scald",
+    "Scorching Sands",
+    "Secret Power",
+    "Shadow Ball",
+    "Signal Beam",
+    "Sky Attack",
+    "Sludge Bomb",
+    "Sludge Wave",
+    "Snarl",
+    "Snore",
+    "Steel Wing",
+    "Stomp",
+    "Struggle Bug",
+    "Throat Chop",
+    "Thunder",
+    "Thunder Fang",
+    "Thunder Cage",
+    "Thunderbolt",
+    "Thunder Punch",
+    "Twister",
+    "Water Pulse",
+    "Waterfall",
+    "Zap Cannon",
+    "Zen Headbutt"
+] as move_name[]);
 
-pokemon_weights["Bulbasaur"] = 6.9;
+const biting_moves: move_name[] = [
+    "Bite",
+    "Crunch",
+    "Fire Fang",
+    "Ice Fang",
+    "Psychic Fangs",
+    "Fishious Rend",
+    "Jaw Lock",
+    "Hyper Fang",
+    "Thunder Fang",
+    "Poison Fang"
+];
+
+const contact_moves: Set<move_name> = new Set<move_name>(
+    ["Pound",
+        "Karate Chop",
+        "Double Slap",
+        "Comet Punch",
+        "Mega Punch",
+        "Fire Punch",
+        "Ice Punch",
+        "Thunder Punch",
+        "Scratch",
+        "Vise Grip",
+        "Guillotine",
+        "Cut",
+        "Wing Attack",
+        "Fly",
+        "Bind",
+        "Slam",
+        "Vine Whip",
+        "Stomp",
+        "Double Kick",
+        "Mega Kick",
+        "Jump Kick",
+        "Rolling Kick",
+        "Headbutt",
+        "Horn Attack",
+        "Fury Attack",
+        "Horn Drill",
+        "Tackle",
+        "Body Slam",
+        "Wrap",
+        "Take Down",
+        "Thrash",
+        "Double-Edge",
+        "Bite",
+        "Peck",
+        "Drill Peck",
+        "Submission",
+        "Low Kick",
+        "Counter",
+        "Seismic Toss",
+        "Strength",
+        "Petal Dance",
+        "Dig",
+        "Quick Attack",
+        "Rage",
+        "Bide",
+        "Lick",
+        "Waterfall",
+        "Clamp",
+        "Skull Bash",
+        "Constrict",
+        "High Jump Kick",
+        "Leech Life",
+        "Dizzy Punch",
+        "Crabhammer",
+        "Fury Swipes",
+        "Hyper Fang",
+        "Super Fang",
+        "Slash",
+        "Struggle",
+        "Triple Kick",
+        "Thief",
+        "Flame Wheel",
+        "Flail",
+        "Reversal",
+        "Mach Punch",
+        "Feint Attack",
+        "Outrage",
+        "Rollout",
+        "False Swipe",
+        "Spark",
+        "Fury Cutter",
+        "Steel Wing",
+        "Return",
+        "Frustration",
+        "Dynamic Punch",
+        "Megahorn",
+        "Pursuit",
+        "Rapid Spin",
+        "Iron Tail",
+        "Metal Claw",
+        "Vital Throw",
+        "Cross Chop",
+        "Crunch",
+        "Extreme Speed",
+        "Rock Smash",
+        "Fake Out",
+        "Facade",
+        "Focus Punch",
+        "Smelling Salts",
+        "Superpower",
+        "Revenge",
+        "Brick Break",
+        "Knock Off",
+        "Endeavor",
+        "Dive",
+        "Arm Thrust",
+        "Blaze Kick",
+        "Ice Ball",
+        "Needle Arm",
+        "Poison Fang",
+        "Crush Claw",
+        "Meteor Mash",
+        "Astonish",
+        "Shadow Punch",
+        "Sky Uppercut",
+        "Aerial Ace",
+        "Dragon Claw",
+        "Bounce",
+        "Poison Tail",
+        "Covet",
+        "Volt Tackle",
+        "Leaf Blade",
+        "Wake-Up Slap",
+        "Hammer Arm",
+        "Gyro Ball",
+        "Pluck",
+        "U-turn",
+        "Close Combat",
+        "Payback",
+        "Assurance",
+        "Trump Card",
+        "Wring Out",
+        "Punishment",
+        "Last Resort",
+        "Sucker Punch",
+        "Flare Blitz",
+        "Force Palm",
+        "Poison Jab",
+        "Night Slash",
+        "Aqua Tail",
+        "X-Scissor",
+        "Dragon Rush",
+        "Drain Punch",
+        "Brave Bird",
+        "Giga Impact",
+        "Bullet Punch",
+        "Avalanche",
+        "Shadow Claw",
+        "Thunder Fang",
+        "Ice Fang",
+        "Fire Fang",
+        "Shadow Sneak",
+        "Zen Headbutt",
+        "Rock Climb",
+        "Power Whip",
+        "Cross Poison",
+        "Iron Head",
+        "Grass Knot",
+        "Bug Bite",
+        "Wood Hammer",
+        "Aqua Jet",
+        "Head Smash",
+        "Double Hit",
+        "Crush Grip",
+        "Shadow Force",
+        "Storm Throw",
+        "Heavy Slam",
+        "Flame Charge",
+        "Low Sweep",
+        "Foul Play",
+        "Chip Away",
+        "Sky Drop",
+        "Circle Throw",
+        "Acrobatics",
+        "Retaliate",
+        "Dragon Tail",
+        "Wild Charge",
+        "Drill Run",
+        "Dual Chop",
+        "Heart Stamp",
+        "Horn Leech",
+        "Sacred Sword",
+        "Razor Shell",
+        "Heat Crash",
+        "Steamroller",
+        "Tail Slap",
+        "Head Charge",
+        "Gear Grind",
+        "Bolt Strike",
+        "V-create",
+        "Flying Press",
+        "Fell Stinger",
+        "Phantom Force",
+        "Draining Kiss",
+        "Play Rough",
+        "Nuzzle",
+        "Hold Back",
+        "Infestation",
+        "Power-Up Punch",
+        "Dragon Ascent",
+        "Catastropika",
+        "First Impression",
+        "Darkest Lariat",
+        "Ice Hammer",
+        "High Horsepower",
+        "Solar Blade",
+        "Throat Chop",
+        "Anchor Shot",
+        "Lunge",
+        "Fire Lash",
+        "Power Trip",
+        "Smart Strike",
+        "Trop Kick",
+        "Dragon Hammer",
+        "Brutal Swing",
+        "Malicious Moonsault",
+        "Soul-Stealing 7-Star Strike",
+        "Pulverizing Pancake",
+        "Psychic Fangs",
+        "Stomping Tantrum",
+        "Accelerock",
+        "Liquidation",
+        "Spectral Thief",
+        "Sunsteel Strike",
+        "Zing Zap",
+        "Multi-Attack",
+        "Plasma Fists",
+        "Searing Sunraze Smash",
+        "Let's Snuggle Forever",
+        "Zippy Zap",
+        "Floaty Fall",
+        "Sizzly Slide",
+        "Veevee Volley",
+        "Double Iron Bash",
+        "Jaw Lock",
+        "Bolt Beak",
+        "Fishious Rend",
+        "Body Press",
+        "Snap Trap",
+        "Behemoth Blade",
+        "Behemoth Bash",
+        "Breaking Swipe",
+        "Branch Poke",
+        "Spirit Break",
+        "False Surrender",
+        "Steel Roller",
+        "Grassy Glide",
+        "Skitter Smack",
+        "Lash Out",
+        "Flip Turn",
+        "Triple Axel",
+        "Dual Wingbeat",
+        "Wicked Blow",
+        "Surging Strikes",
+        "Thunderous Kick",
+        "Shadow Blitz",
+        "Shadow Break",
+        "Shadow End",
+        "Shadow Rush",
+        "Attack Order",
+        "Aura Wheel",
+        "Barrage",
+        "Beak Blast",
+        "Beat Up",
+        "Bone Club",
+        "Bone Rush",
+        "Bonemerang",
+        "Bulldoze",
+        "Bullet Seed",
+        "Diamond Storm",
+        "Dragon Darts",
+        "Drum Beating",
+        "Earthquake",
+        "Egg Bomb",
+        "Explosion",
+        "Feint",
+        "Fissure",
+        "Fling",
+        "Freeze Shock",
+        "Fusion Bolt",
+        "Grav Apple",
+        "Gunk Shot",
+        "Ice Shard",
+        "Icicle Crash",
+        "Icicle Spear",
+        "Land's Wrath",
+        "Leafage",
+        "Magnet Bomb",
+        "Magnitude",
+        "Metal Burst",
+        "Meteor Assault",
+        "Natural Gift",
+        "Pay Day",
+        "Petal Blizzard",
+        "Pin Missile",
+        "Poison Sting",
+        "Poltergeist",
+        "Precipice Blades",
+        "Present",
+        "Psycho Cut",
+        "Pyro Ball",
+        "Razor Leaf",
+        "Rock Blast",
+        "Rock Slide",
+        "Rock Throw",
+        "Rock Tomb",
+        "Rock Wrecker",
+        "Sacred Fire",
+        "Sand Tomb",
+        "Scale Shot",
+        "Secret Power",
+        "Seed Bomb",
+        "Self-Destruct",
+        "Shadow Bone",
+        "Sky Attack",
+        "Smack Down",
+        "Sinister Arrow Raid",
+        "Spike Cannon",
+        "Spirit Shackle",
+        "Splintered Stormshards",
+        "Stone Edge",
+        "Thousand Arrows",
+        "Thousand Waves",
+        "Twineedle"] as move_name[]
+);
+
+const aura_pulse_moves = new Set<move_name>(
+    [
+        "Aura Sphere",
+        "Dark Pulse",
+        "Dragon Pulse",
+        "Heal Pulse",
+        "Origin Pulse",
+        "Terrain Pulse",
+        "Water Pulse"
+    ] as move_name[]
+);
+
 
 function get_weight(pkm: pokemon) {
     let weight = pokemon_weights[pkm.name];
+    //TODO different formes
+    if (pkm.name === "Charizard") {
+
+
+    }
     if (pkm.ability === "Heavy Metal") {
         weight *= 2;
     }
@@ -26,11 +460,7 @@ function get_weight(pkm: pokemon) {
     if (pkm.item === "Float Stone") {
         weight /= 2;
     }
-    //TODO different formes
-    if (pkm.name === "Charizard") {
 
-
-    }
 
     return Math.min(weight, 999.999);
 }
@@ -115,9 +545,12 @@ function calculate_base_power_inital(from: pokemon, to: pokemon, from_side: poke
     }
 
     if (move.name === "Acrobatics" && from.item === "None") {
-        return 110;
+        return move.power * 2;
     }
 
+    if (move.name === "Misty Explosion" && field.terrain === "Misty") {
+        return move.power * 1.5;
+    }
 
     return move.power;
 }
@@ -272,24 +705,33 @@ function calculate_type_effectiveness(from: pokemon, to: pokemon, from_side: pok
 function apply_type_change_stuff(from: pokemon, to: pokemon, from_side: pokemon_side, to_side: pokemon_side,
                                  field: pokemon_field, move: move): move {
 
+    if (move.name === "Expanding Force" && field.terrain === "Psychic") {
+        move = {...move, power: move.power * 1.5, is_spread_move: true};
+    }
+
+    if (move.name === "Aura Wheel" && from.name === "Morpeko" && from.forme === "Hangry") {
+        move = {...move, type: "Dark"};
+    }
+
     if (move.type === "Normal") {
         if (from.ability === "Galvanize") {
-            return {...move, type: "Electric"};
+            move = {...move, type: "Electric"};
         }
         if (from.ability === "Refrigerate") {
-            return {...move, type: "Ice"};
+            move = {...move, type: "Ice"};
         }
         if (from.ability === "Pixilate") {
-            return {...move, type: "Electric"};
+            move = {...move, type: "Electric"};
         }
         if (from.ability === "Aerilate") {
-            return {...move, type: "Flying"};
+            move = {...move, type: "Flying"};
         }
     }
 
     if (from.ability === "Normalize") {
         return {...move, type: "Normal"};
     }
+
 
     return move;
 }
@@ -338,117 +780,6 @@ const moves_that_have_recoil: move_name[] = [
 function has_recoil(move: move) {
     return moves_that_have_recoil.includes(move.name);
 }
-
-const sheer_force_moves: Set<move_name> = new Set([
-    "Air Slash",
-    "Ancient Power",
-    "Astonish",
-    "Bite",
-    "Blizzard",
-    "Body Slam",
-    "Breaking Swipe",
-    "Bubble",
-    "Bubble Beam",
-    "Bulldoze",
-    "Burning Jealousy",
-    "Charge Beam",
-    "Confusion",
-    "Crunch",
-    "Crush Claw",
-    "Dark Pulse",
-    "Dragon Rush",
-    "Dragon Breath",
-    "Dynamic Punch",
-    "Earth Power",
-    "Ember",
-    "Extrasensory",
-    "Fake Out",
-    "Fire Blast",
-    "Fire Fang",
-    "Fire Punch",
-    "Flame Charge",
-    "Flame Wheel",
-    "Flamethrower",
-    "Flare Blitz",
-    "Flash Cannon",
-    "Focus Blast",
-    "Force Palm",
-    "Gunk Shot",
-    "Headbutt",
-    "Heat Wave",
-    "Hurricane",
-    "Ice Beam",
-    "Ice Fang",
-    "Ice Punch",
-    "Icy Wind",
-    "Iron Head",
-    "Iron Tail",
-    "Lava Plume",
-    "Liquidation",
-    "Low Sweep",
-    "Metal Claw",
-    "Mud Bomb",
-    "Mud Shot",
-    "Mud-Slap",
-    "Mystical Fire",
-    "Play Rough",
-    "Poison Fang",
-    "Poison Jab",
-    "Poison Sting",
-    "Poison Tail",
-    "Power-Up Punch",
-    "Psychic",
-    "Razor Shell",
-    "Rock Climb",
-    "Rock Slide",
-    "Rock Smash",
-    "Rock Tomb",
-    "Scald",
-    "Scorching Sands",
-    "Secret Power",
-    "Shadow Ball",
-    "Signal Beam",
-    "Sky Attack",
-    "Sludge Bomb",
-    "Sludge Wave",
-    "Snarl",
-    "Snore",
-    "Steel Wing",
-    "Stomp",
-    "Struggle Bug",
-    "Throat Chop",
-    "Thunder",
-    "Thunder Fang",
-    "Thunder Cage",
-    "Thunderbolt",
-    "Thunder Punch",
-    "Twister",
-    "Water Pulse",
-    "Waterfall",
-    "Zap Cannon",
-    "Zen Headbutt"
-] as move_name[]);
-
-const biting_moves: move_name[] = [
-    "Bite",
-    "Crunch",
-    "Fire Fang",
-    "Ice Fang",
-    "Psychic Fangs",
-    "Fishious Rend",
-    "Jaw Lock",
-    "Hyper Fang",
-    "Thunder Fang",
-    "Poison Fang"
-];
-
-const contact_moves: Set<move_name> = new Set<move_name>(
-    [] as move_name[]
-);
-
-const aura_pulse_moves = new Set<move_name>(
-    [] as move_name[]
-);
 
 function is_correct_plate(type: pokemon_type, item: item): boolean {
     if (item.endsWith(" Plate")) {
@@ -542,8 +873,87 @@ function is_correct_type_enhancing_item(type: pokemon_type, item: item): boolean
     return false;
 }
 
-function is_knockoff_able(item: item): boolean {
-    return false;
+const z_crystals = new Set<item>([
+    "Aloraichium Z",
+    "Bugnium Z",
+    "Ultranecrozium Z",
+    "Darkinium Z",
+    "Dragonium Z",
+    "Decidum Z",
+    "Eevium Z",
+    "Electrium Z",
+    "Fairium Z",
+    "Fightinium Z",
+    "Firium Z",
+    "Flyinium Z",
+    "Ghostium Z",
+    "Grassium Z",
+    "Aloraichium Z",
+    "Groundium Z",
+    "Icium Z",
+    "Poisonium Z",
+    "Psychium Z",
+    "Normalium Z",
+    "Waterium Z",
+    "Rockium Z",
+    "Aloraichium Z",
+    "Incinium Z",
+    "Kommonium Z",
+    "Lunalium Z",
+    "Solganium Z",
+    "Lycanium Z",
+    "Marshadium Z",
+    "Mewnium Z",
+    "Mimikium Z",
+    "Pikanium Z",
+    "Pikashunium Z",
+    "Primarium Z",
+    "Snorlium Z",
+    "Tapunium Z",
+    "Ultranecrozium Z"
+
+] as item[]);
+
+const mega_stones = new Set<item>(
+    [
+    ] as item[]
+);
+
+function is_knockoff_able(pokemon: pokemon, item: item): boolean {
+    if (item === "None") {
+        return false;
+    }
+
+    if (pokemon.name === "Giratina" && item === "Griseous Orb") {
+        return false;
+    }
+    if (z_crystals.has(item)) {
+        return false;
+    }
+    if(pokemon.name==="Zacian" && item==="Rusted Sword"){
+        return false;
+    }
+    if(pokemon.name==="Zamazenta" && item==="Rusted Shield"){
+        return false;
+    }
+    if(pokemon.name==="Kyogre" && item==="Blue Orb"){
+        return false;
+    }
+    if(pokemon.name==="Groudon" && item==="Red Orb"){
+        return false;
+    }
+    if(pokemon.ability==="Sticky Hold"){
+        return false;
+    }
+    if(pokemon.name==="Silvally" && item.endsWith(" Memory")){
+        return false;
+    }
+    if(pokemon.name==="Arceus" && item.endsWith(" Plate")){
+        return false;
+    }
+    //TODO mega stones
+
+    return true;
 }
 
 
@@ -644,7 +1054,7 @@ function calculate_base_power(from: pokemon, to: pokemon, from_side: pokemon_sid
     //me first
 
     if (move.name === "Knock Off" &&
-        (from.item)) {
+        is_knockoff_able(to, to.item)) {
 
     }
 
@@ -835,16 +1245,16 @@ function calculate_actual_att_def(from: pokemon, to: pokemon, from_side: pokemon
 
 }
 
-function is_correct_resist_berry(item:item,type:pokemon_type){
-    switch (type){
+function is_correct_resist_berry(item: item, type: pokemon_type) {
+    switch (type) {
         case "Fire":
             return item === "Occa Berry";
         case "Water":
             return item === "Passho Berry";
         case "Grass":
-            break;
+            return item === "Rindo Berry";
         case "Ice":
-            break;
+            return item === "Yache Berry";
         case "Normal":
             return item === "Chilan Berry";
         case "None":
@@ -854,19 +1264,19 @@ function is_correct_resist_berry(item:item,type:pokemon_type){
         case "Ghost":
             return item === "Kasib Berry";
         case "Bug":
-            break;
+            return item === "Tanga Berry";
         case "Electric":
-            break;
+            return item === "Wacan Berry";
         case "Poison":
             return item === "Kebia Berry";
         case "Fairy":
-            break;
+            return item === "Roseli Berry";
         case "Flying":
             return item === "Coba Berry";
         case "Steel":
             return item === "Babiri Berry";
         case "Ground":
-            break;
+            return item === "Shuca Berry";
         case "Rock":
             return item === "Charti Berry";
         case "Dark":
@@ -879,10 +1289,10 @@ function is_correct_resist_berry(item:item,type:pokemon_type){
     }
 }
 
-function get_final_modifiers(from:pokemon,to:pokemon,from_side:pokemon_side,to_side:pokemon_side,
-                             field:pokemon_field,original_move:move,move:move,type_effectivness:number):number[]{
+function get_final_modifiers(from: pokemon, to: pokemon, from_side: pokemon_side, to_side: pokemon_side,
+                             field: pokemon_field, original_move: move, move: move, type_effectivness: number): number[] {
 
-    let final_modifiers = [];
+    let final_modifiers = [1];
 
     if (
         (to_side.reflect && move.category === "Physical") ||
@@ -892,57 +1302,62 @@ function get_final_modifiers(from:pokemon,to:pokemon,from_side:pokemon_side,to_s
         final_modifiers.push(field.game_type === "Doubles" ? 2732 / 4096 : 2048 / 4096);
     }
 
-    if(from.ability === "Neuroforce" && type_effectivness>1){
-        final_modifiers.push(5120/4096);
+    if (from.ability === "Neuroforce" && type_effectivness > 1) {
+        final_modifiers.push(5120 / 4096);
     }
-    if(from.ability === "Sniper" && move.is_crit){
-        final_modifiers.push(6144/4096);
+    if (from.ability === "Sniper" && move.is_crit) {
+        final_modifiers.push(6144 / 4096);
     }
-    if(from.ability === "Tinted Lens" && type_effectivness <1){
-        final_modifiers.push(8192/4096);
+    if (from.ability === "Tinted Lens" && type_effectivness < 1) {
+        final_modifiers.push(8192 / 4096);
     }
-    if((to.ability === "Multiscale" || to.ability === "Shadow Shield")
-        && to.current_hp === calculateActualStat(to,"hp")){
+    if ((to.ability === "Multiscale" || to.ability === "Shadow Shield")
+        && to.current_hp === calculateActualStat(to, "hp")) {
         final_modifiers.push(0.5);
     }
-    if(to.ability === "Fluffy" && contact_moves.has(move.name)){
+    if (to.ability === "Fluffy" && contact_moves.has(move.name)) {
         final_modifiers.push(0.5);
     }
-    if(to_side.friend_guard){
-        final_modifiers.push(3072/4096);
+    if (to_side.friend_guard) {
+        final_modifiers.push(3072 / 4096);
     }
-    if((to.ability === "Solid Rock" || to.ability === "Filter" || to.ability==="Prism Armor")
-        && type_effectivness>1){
+    if ((to.ability === "Solid Rock" || to.ability === "Filter" || to.ability === "Prism Armor")
+        && type_effectivness > 1) {
 
-        final_modifiers.push(3072/4096);
+        final_modifiers.push(3072 / 4096);
     }
 
-    if(move.name=== "Metronome" && move.extra_data && move.extra_data["move_count"]){
+    if (move.name === "Metronome" && move.extra_data && move.extra_data["move_count"]) {
         const move_count = move.extra_data["move_count"];
-        if(move_count>=5){
+        if (move_count >= 5) {
             final_modifiers.push(2);
         }
-        final_modifiers.push([1,4915/4096,5734/4096,6553/4096,7372/4096][move_count]);
+        final_modifiers.push([1, 4915 / 4096, 5734 / 4096, 6553 / 4096, 7372 / 4096][move_count]);
     }
-    if(to.ability === "Fluffy" && move.type === "Fire"){
+    if (to.ability === "Fluffy" && move.type === "Fire") {
         final_modifiers.push(2);
     }
-    if(from.item === "Expert Belt" && type_effectivness>1){
-        final_modifiers.push(4915/4096);
+    if (from.item === "Expert Belt" && type_effectivness > 1) {
+        final_modifiers.push(4915 / 4096);
     }
-    if(from.item === "Life Orb"){
-        final_modifiers.push(5324/4096);
+    if (from.item === "Life Orb") {
+        final_modifiers.push(5324 / 4096);
     }
-    if(
-        (type_effectivness>1 && is_correct_resist_berry(to.item, move.type))||
+    if (
+        (type_effectivness > 1 && is_correct_resist_berry(to.item, move.type)) ||
         (move.type === "Normal" && to.item === "Chilan Berry")
-        ){
+    ) {
         final_modifiers.push(0.5);
     }
+    //dive + surf, dig + earthquake, etc
+
 
     return final_modifiers;
 }
 
+function is_max_move(move: move): boolean {
+    return false;
+}
 
 //https://www.trainertower.com/dawoblefets-damage-dissertation/
 export function calculateDamage(from: pokemon, to: pokemon, from_side: pokemon_side, to_side: pokemon_side,
@@ -996,7 +1411,7 @@ export function calculateDamage(from: pokemon, to: pokemon, from_side: pokemon_s
         (i) => Math.floor((dmg * (100 - i)) / 100)
     );
 
-    let more_modifiers2 = [];
+    let more_modifiers2: number[] = [];
 
     if (move.type === from.type1 || move.type === from.type2) {
         if (from.ability === "Adaptability") {
@@ -1013,9 +1428,17 @@ export function calculateDamage(from: pokemon, to: pokemon, from_side: pokemon_s
         more_modifiers2.push(2048 / 4096);
     }
 
-    const final_modifiers = get_final_modifiers(from,to,from_side,to_side,field,original_move,move,type_effectivness);
+    const final_modifiers = get_final_modifiers(from, to, from_side, to_side, field, original_move, move, type_effectivness);
 
-    return damages;
+    more_modifiers2.push(final_modifiers.reduce((a, b) => a * b));
+
+    if (to.protecting && (move.is_z_move || from.dynamaxed)) {
+        more_modifiers2.push(1024 / 4096);
+    }
+
+    return damages.map((
+        a) => poke_round([a, ...more_modifiers2].reduce((a, b) => Math.floor(a * b)))
+    );
 }
 
 

@@ -58,7 +58,6 @@ gen_7_pokemon["Rowlet"] = {
     ]
 }
 
-
 gen_7_pokemon["Dartrix"] = {
     name:"Dartrix",
     ability:"Overgrow",
@@ -114,7 +113,6 @@ gen_7_pokemon["Dartrix"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Decidueye"] = {
     name:"Decidueye",
@@ -172,12 +170,10 @@ gen_7_pokemon["Decidueye"] = {
     ]
 }
 
-
 gen_7_pokemon["Litten"] = {
     name:"Litten",
     ability:"Overgrow",
     type1:"Fire",
-
 
     gender:"Male",
     status:"Healthy",
@@ -229,12 +225,10 @@ gen_7_pokemon["Litten"] = {
     ]
 }
 
-
 gen_7_pokemon["Torracat"] = {
     name:"Torracat",
     ability:"Overgrow",
     type1:"Fire",
-
 
     gender:"Male",
     status:"Healthy",
@@ -285,7 +279,6 @@ gen_7_pokemon["Torracat"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Incineroar"] = {
     name:"Incineroar",
@@ -343,12 +336,10 @@ gen_7_pokemon["Incineroar"] = {
     ]
 }
 
-
 gen_7_pokemon["Popplio"] = {
     name:"Popplio",
     ability:"Overgrow",
     type1:"Water",
-
 
     gender:"Male",
     status:"Healthy",
@@ -400,12 +391,10 @@ gen_7_pokemon["Popplio"] = {
     ]
 }
 
-
 gen_7_pokemon["Brionne"] = {
     name:"Brionne",
     ability:"Overgrow",
     type1:"Water",
-
 
     gender:"Male",
     status:"Healthy",
@@ -456,7 +445,6 @@ gen_7_pokemon["Brionne"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Primarina"] = {
     name:"Primarina",
@@ -514,7 +502,6 @@ gen_7_pokemon["Primarina"] = {
     ]
 }
 
-
 gen_7_pokemon["Pikipek"] = {
     name:"Pikipek",
     ability:"Overgrow",
@@ -570,7 +557,6 @@ gen_7_pokemon["Pikipek"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Trumbeak"] = {
     name:"Trumbeak",
@@ -628,7 +614,6 @@ gen_7_pokemon["Trumbeak"] = {
     ]
 }
 
-
 gen_7_pokemon["Toucannon"] = {
     name:"Toucannon",
     ability:"Overgrow",
@@ -685,12 +670,10 @@ gen_7_pokemon["Toucannon"] = {
     ]
 }
 
-
 gen_7_pokemon["Yungoos"] = {
     name:"Yungoos",
     ability:"Overgrow",
     type1:"Normal",
-
 
     gender:"Male",
     status:"Healthy",
@@ -742,12 +725,10 @@ gen_7_pokemon["Yungoos"] = {
     ]
 }
 
-
 gen_7_pokemon["Gumshoos"] = {
     name:"Gumshoos",
     ability:"Overgrow",
     type1:"Normal",
-
 
     gender:"Male",
     status:"Healthy",
@@ -799,12 +780,10 @@ gen_7_pokemon["Gumshoos"] = {
     ]
 }
 
-
 gen_7_pokemon["Grubbin"] = {
     name:"Grubbin",
     ability:"Overgrow",
     type1:"Bug",
-
 
     gender:"Male",
     status:"Healthy",
@@ -855,7 +834,6 @@ gen_7_pokemon["Grubbin"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Charjabug"] = {
     name:"Charjabug",
@@ -913,7 +891,6 @@ gen_7_pokemon["Charjabug"] = {
     ]
 }
 
-
 gen_7_pokemon["Vikavolt"] = {
     name:"Vikavolt",
     ability:"Overgrow",
@@ -970,12 +947,10 @@ gen_7_pokemon["Vikavolt"] = {
     ]
 }
 
-
 gen_7_pokemon["Crabrawler"] = {
     name:"Crabrawler",
     ability:"Overgrow",
     type1:"Fighting",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1026,7 +1001,6 @@ gen_7_pokemon["Crabrawler"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Crabominable"] = {
     name:"Crabominable",
@@ -1084,7 +1058,6 @@ gen_7_pokemon["Crabominable"] = {
     ]
 }
 
-
 gen_7_pokemon["Oricorio"] = {
     name:"Oricorio",
     ability:"Overgrow",
@@ -1140,7 +1113,6 @@ gen_7_pokemon["Oricorio"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Oricorio"] = {
     name:"Oricorio",
@@ -1198,7 +1170,6 @@ gen_7_pokemon["Oricorio"] = {
     ]
 }
 
-
 gen_7_pokemon["Oricorio"] = {
     name:"Oricorio",
     ability:"Overgrow",
@@ -1255,7 +1226,6 @@ gen_7_pokemon["Oricorio"] = {
     ]
 }
 
-
 gen_7_pokemon["Oricorio"] = {
     name:"Oricorio",
     ability:"Overgrow",
@@ -1311,7 +1281,6 @@ gen_7_pokemon["Oricorio"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Cutiefly"] = {
     name:"Cutiefly",
@@ -1369,7 +1338,6 @@ gen_7_pokemon["Cutiefly"] = {
     ]
 }
 
-
 gen_7_pokemon["Ribombee"] = {
     name:"Ribombee",
     ability:"Overgrow",
@@ -1426,12 +1394,10 @@ gen_7_pokemon["Ribombee"] = {
     ]
 }
 
-
 gen_7_pokemon["Rockruff"] = {
     name:"Rockruff",
     ability:"Overgrow",
     type1:"Rock",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1483,12 +1449,10 @@ gen_7_pokemon["Rockruff"] = {
     ]
 }
 
-
 gen_7_pokemon["Rockruff"] = {
     name:"Rockruff",
     ability:"Overgrow",
     type1:"Rock",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1539,13 +1503,11 @@ gen_7_pokemon["Rockruff"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Lycanroc"] = {
     name:"Lycanroc",
     ability:"Overgrow",
     type1:"Rock",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1597,12 +1559,10 @@ gen_7_pokemon["Lycanroc"] = {
     ]
 }
 
-
 gen_7_pokemon["Lycanroc"] = {
     name:"Lycanroc",
     ability:"Overgrow",
     type1:"Rock",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1654,12 +1614,10 @@ gen_7_pokemon["Lycanroc"] = {
     ]
 }
 
-
 gen_7_pokemon["Lycanroc"] = {
     name:"Lycanroc",
     ability:"Overgrow",
     type1:"Rock",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1711,12 +1669,10 @@ gen_7_pokemon["Lycanroc"] = {
     ]
 }
 
-
 gen_7_pokemon["Wishiwashi"] = {
     name:"Wishiwashi",
     ability:"Overgrow",
     type1:"Water",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1768,12 +1724,10 @@ gen_7_pokemon["Wishiwashi"] = {
     ]
 }
 
-
 gen_7_pokemon["Wishiwashi"] = {
     name:"Wishiwashi",
     ability:"Overgrow",
     type1:"Water",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1824,7 +1778,6 @@ gen_7_pokemon["Wishiwashi"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Mareanie"] = {
     name:"Mareanie",
@@ -1882,7 +1835,6 @@ gen_7_pokemon["Mareanie"] = {
     ]
 }
 
-
 gen_7_pokemon["Toxapex"] = {
     name:"Toxapex",
     ability:"Overgrow",
@@ -1939,12 +1891,10 @@ gen_7_pokemon["Toxapex"] = {
     ]
 }
 
-
 gen_7_pokemon["Mudbray"] = {
     name:"Mudbray",
     ability:"Overgrow",
     type1:"Ground",
-
 
     gender:"Male",
     status:"Healthy",
@@ -1996,12 +1946,10 @@ gen_7_pokemon["Mudbray"] = {
     ]
 }
 
-
 gen_7_pokemon["Mudsdale"] = {
     name:"Mudsdale",
     ability:"Overgrow",
     type1:"Ground",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2052,7 +2000,6 @@ gen_7_pokemon["Mudsdale"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Dewpider"] = {
     name:"Dewpider",
@@ -2110,7 +2057,6 @@ gen_7_pokemon["Dewpider"] = {
     ]
 }
 
-
 gen_7_pokemon["Araquanid"] = {
     name:"Araquanid",
     ability:"Overgrow",
@@ -2167,12 +2113,10 @@ gen_7_pokemon["Araquanid"] = {
     ]
 }
 
-
 gen_7_pokemon["Fomantis"] = {
     name:"Fomantis",
     ability:"Overgrow",
     type1:"Grass",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2224,12 +2168,10 @@ gen_7_pokemon["Fomantis"] = {
     ]
 }
 
-
 gen_7_pokemon["Lurantis"] = {
     name:"Lurantis",
     ability:"Overgrow",
     type1:"Grass",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2280,7 +2222,6 @@ gen_7_pokemon["Lurantis"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Morelull"] = {
     name:"Morelull",
@@ -2338,7 +2279,6 @@ gen_7_pokemon["Morelull"] = {
     ]
 }
 
-
 gen_7_pokemon["Shiinotic"] = {
     name:"Shiinotic",
     ability:"Overgrow",
@@ -2394,7 +2334,6 @@ gen_7_pokemon["Shiinotic"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Salandit"] = {
     name:"Salandit",
@@ -2452,7 +2391,6 @@ gen_7_pokemon["Salandit"] = {
     ]
 }
 
-
 gen_7_pokemon["Salazzle"] = {
     name:"Salazzle",
     ability:"Overgrow",
@@ -2508,7 +2446,6 @@ gen_7_pokemon["Salazzle"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Stufful"] = {
     name:"Stufful",
@@ -2566,7 +2503,6 @@ gen_7_pokemon["Stufful"] = {
     ]
 }
 
-
 gen_7_pokemon["Bewear"] = {
     name:"Bewear",
     ability:"Overgrow",
@@ -2623,12 +2559,10 @@ gen_7_pokemon["Bewear"] = {
     ]
 }
 
-
 gen_7_pokemon["Bounsweet"] = {
     name:"Bounsweet",
     ability:"Overgrow",
     type1:"Grass",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2680,12 +2614,10 @@ gen_7_pokemon["Bounsweet"] = {
     ]
 }
 
-
 gen_7_pokemon["Steenee"] = {
     name:"Steenee",
     ability:"Overgrow",
     type1:"Grass",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2737,12 +2669,10 @@ gen_7_pokemon["Steenee"] = {
     ]
 }
 
-
 gen_7_pokemon["Tsareena"] = {
     name:"Tsareena",
     ability:"Overgrow",
     type1:"Grass",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2794,12 +2724,10 @@ gen_7_pokemon["Tsareena"] = {
     ]
 }
 
-
 gen_7_pokemon["Comfey"] = {
     name:"Comfey",
     ability:"Overgrow",
     type1:"Fairy",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2850,7 +2778,6 @@ gen_7_pokemon["Comfey"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Oranguru"] = {
     name:"Oranguru",
@@ -2908,12 +2835,10 @@ gen_7_pokemon["Oranguru"] = {
     ]
 }
 
-
 gen_7_pokemon["Passimian"] = {
     name:"Passimian",
     ability:"Overgrow",
     type1:"Fighting",
-
 
     gender:"Male",
     status:"Healthy",
@@ -2964,7 +2889,6 @@ gen_7_pokemon["Passimian"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Wimpod"] = {
     name:"Wimpod",
@@ -3022,7 +2946,6 @@ gen_7_pokemon["Wimpod"] = {
     ]
 }
 
-
 gen_7_pokemon["Golisopod"] = {
     name:"Golisopod",
     ability:"Overgrow",
@@ -3078,7 +3001,6 @@ gen_7_pokemon["Golisopod"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Sandygast"] = {
     name:"Sandygast",
@@ -3136,7 +3058,6 @@ gen_7_pokemon["Sandygast"] = {
     ]
 }
 
-
 gen_7_pokemon["Palossand"] = {
     name:"Palossand",
     ability:"Overgrow",
@@ -3193,12 +3114,10 @@ gen_7_pokemon["Palossand"] = {
     ]
 }
 
-
 gen_7_pokemon["Pyukumuku"] = {
     name:"Pyukumuku",
     ability:"Overgrow",
     type1:"Water",
-
 
     gender:"Male",
     status:"Healthy",
@@ -3250,12 +3169,10 @@ gen_7_pokemon["Pyukumuku"] = {
     ]
 }
 
-
 gen_7_pokemon["Type: Null"] = {
     name:"Type: Null",
     ability:"Overgrow",
     type1:"Normal",
-
 
     gender:"Male",
     status:"Healthy",
@@ -3307,12 +3224,10 @@ gen_7_pokemon["Type: Null"] = {
     ]
 }
 
-
 gen_7_pokemon["Silvally"] = {
     name:"Silvally",
     ability:"Overgrow",
     type1:"Normal",
-
 
     gender:"Male",
     status:"Healthy",
@@ -3363,7 +3278,6 @@ gen_7_pokemon["Silvally"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Minior"] = {
     name:"Minior",
@@ -3421,7 +3335,6 @@ gen_7_pokemon["Minior"] = {
     ]
 }
 
-
 gen_7_pokemon["Minior"] = {
     name:"Minior",
     ability:"Overgrow",
@@ -3478,12 +3391,10 @@ gen_7_pokemon["Minior"] = {
     ]
 }
 
-
 gen_7_pokemon["Komala"] = {
     name:"Komala",
     ability:"Overgrow",
     type1:"Normal",
-
 
     gender:"Male",
     status:"Healthy",
@@ -3534,7 +3445,6 @@ gen_7_pokemon["Komala"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Turtonator"] = {
     name:"Turtonator",
@@ -3592,7 +3502,6 @@ gen_7_pokemon["Turtonator"] = {
     ]
 }
 
-
 gen_7_pokemon["Togedemaru"] = {
     name:"Togedemaru",
     ability:"Overgrow",
@@ -3648,7 +3557,6 @@ gen_7_pokemon["Togedemaru"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Mimikyu"] = {
     name:"Mimikyu",
@@ -3706,7 +3614,6 @@ gen_7_pokemon["Mimikyu"] = {
     ]
 }
 
-
 gen_7_pokemon["Bruxish"] = {
     name:"Bruxish",
     ability:"Overgrow",
@@ -3762,7 +3669,6 @@ gen_7_pokemon["Bruxish"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Drampa"] = {
     name:"Drampa",
@@ -3820,7 +3726,6 @@ gen_7_pokemon["Drampa"] = {
     ]
 }
 
-
 gen_7_pokemon["Dhelmise"] = {
     name:"Dhelmise",
     ability:"Overgrow",
@@ -3877,12 +3782,10 @@ gen_7_pokemon["Dhelmise"] = {
     ]
 }
 
-
 gen_7_pokemon["Jangmo-o"] = {
     name:"Jangmo-o",
     ability:"Overgrow",
     type1:"Dragon",
-
 
     gender:"Male",
     status:"Healthy",
@@ -3933,7 +3836,6 @@ gen_7_pokemon["Jangmo-o"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Hakamo-o"] = {
     name:"Hakamo-o",
@@ -3991,7 +3893,6 @@ gen_7_pokemon["Hakamo-o"] = {
     ]
 }
 
-
 gen_7_pokemon["Kommo-o"] = {
     name:"Kommo-o",
     ability:"Overgrow",
@@ -4047,7 +3948,6 @@ gen_7_pokemon["Kommo-o"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Tapu Koko"] = {
     name:"Tapu Koko",
@@ -4105,7 +4005,6 @@ gen_7_pokemon["Tapu Koko"] = {
     ]
 }
 
-
 gen_7_pokemon["Tapu Lele"] = {
     name:"Tapu Lele",
     ability:"Overgrow",
@@ -4161,7 +4060,6 @@ gen_7_pokemon["Tapu Lele"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Tapu Bulu"] = {
     name:"Tapu Bulu",
@@ -4219,7 +4117,6 @@ gen_7_pokemon["Tapu Bulu"] = {
     ]
 }
 
-
 gen_7_pokemon["Tapu Fini"] = {
     name:"Tapu Fini",
     ability:"Overgrow",
@@ -4276,12 +4173,10 @@ gen_7_pokemon["Tapu Fini"] = {
     ]
 }
 
-
 gen_7_pokemon["Cosmog"] = {
     name:"Cosmog",
     ability:"Overgrow",
     type1:"Psychic",
-
 
     gender:"Male",
     status:"Healthy",
@@ -4333,12 +4228,10 @@ gen_7_pokemon["Cosmog"] = {
     ]
 }
 
-
 gen_7_pokemon["Cosmoem"] = {
     name:"Cosmoem",
     ability:"Overgrow",
     type1:"Psychic",
-
 
     gender:"Male",
     status:"Healthy",
@@ -4389,7 +4282,6 @@ gen_7_pokemon["Cosmoem"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Solgaleo"] = {
     name:"Solgaleo",
@@ -4447,7 +4339,6 @@ gen_7_pokemon["Solgaleo"] = {
     ]
 }
 
-
 gen_7_pokemon["Lunala"] = {
     name:"Lunala",
     ability:"Overgrow",
@@ -4503,7 +4394,6 @@ gen_7_pokemon["Lunala"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Nihilego"] = {
     name:"Nihilego",
@@ -4561,7 +4451,6 @@ gen_7_pokemon["Nihilego"] = {
     ]
 }
 
-
 gen_7_pokemon["Buzzwole"] = {
     name:"Buzzwole",
     ability:"Overgrow",
@@ -4617,7 +4506,6 @@ gen_7_pokemon["Buzzwole"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Pheromosa"] = {
     name:"Pheromosa",
@@ -4675,12 +4563,10 @@ gen_7_pokemon["Pheromosa"] = {
     ]
 }
 
-
 gen_7_pokemon["Xurkitree"] = {
     name:"Xurkitree",
     ability:"Overgrow",
     type1:"Electric",
-
 
     gender:"Male",
     status:"Healthy",
@@ -4731,7 +4617,6 @@ gen_7_pokemon["Xurkitree"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Celesteela"] = {
     name:"Celesteela",
@@ -4789,7 +4674,6 @@ gen_7_pokemon["Celesteela"] = {
     ]
 }
 
-
 gen_7_pokemon["Kartana"] = {
     name:"Kartana",
     ability:"Overgrow",
@@ -4845,7 +4729,6 @@ gen_7_pokemon["Kartana"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Guzzlord"] = {
     name:"Guzzlord",
@@ -4903,12 +4786,10 @@ gen_7_pokemon["Guzzlord"] = {
     ]
 }
 
-
 gen_7_pokemon["Necrozma"] = {
     name:"Necrozma",
     ability:"Overgrow",
     type1:"Psychic",
-
 
     gender:"Male",
     status:"Healthy",
@@ -4959,7 +4840,6 @@ gen_7_pokemon["Necrozma"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Necrozma"] = {
     name:"Necrozma",
@@ -5017,7 +4897,6 @@ gen_7_pokemon["Necrozma"] = {
     ]
 }
 
-
 gen_7_pokemon["Necrozma"] = {
     name:"Necrozma",
     ability:"Overgrow",
@@ -5073,7 +4952,6 @@ gen_7_pokemon["Necrozma"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Necrozma"] = {
     name:"Necrozma",
@@ -5131,7 +5009,6 @@ gen_7_pokemon["Necrozma"] = {
     ]
 }
 
-
 gen_7_pokemon["Magearna"] = {
     name:"Magearna",
     ability:"Overgrow",
@@ -5187,7 +5064,6 @@ gen_7_pokemon["Magearna"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Marshadow"] = {
     name:"Marshadow",
@@ -5245,12 +5121,10 @@ gen_7_pokemon["Marshadow"] = {
     ]
 }
 
-
 gen_7_pokemon["Poipole"] = {
     name:"Poipole",
     ability:"Overgrow",
     type1:"Poison",
-
 
     gender:"Male",
     status:"Healthy",
@@ -5301,7 +5175,6 @@ gen_7_pokemon["Poipole"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Naganadel"] = {
     name:"Naganadel",
@@ -5359,7 +5232,6 @@ gen_7_pokemon["Naganadel"] = {
     ]
 }
 
-
 gen_7_pokemon["Stakataka"] = {
     name:"Stakataka",
     ability:"Overgrow",
@@ -5415,7 +5287,6 @@ gen_7_pokemon["Stakataka"] = {
         }
     ]
 }
-
 
 gen_7_pokemon["Blacephalon"] = {
     name:"Blacephalon",
@@ -5473,12 +5344,10 @@ gen_7_pokemon["Blacephalon"] = {
     ]
 }
 
-
 gen_7_pokemon["Zeraora"] = {
     name:"Zeraora",
     ability:"Overgrow",
     type1:"Electric",
-
 
     gender:"Male",
     status:"Healthy",
@@ -5530,12 +5399,10 @@ gen_7_pokemon["Zeraora"] = {
     ]
 }
 
-
 gen_7_pokemon["Meltan"] = {
     name:"Meltan",
     ability:"Overgrow",
     type1:"Steel",
-
 
     gender:"Male",
     status:"Healthy",
@@ -5587,12 +5454,10 @@ gen_7_pokemon["Meltan"] = {
     ]
 }
 
-
 gen_7_pokemon["Melmetal"] = {
     name:"Melmetal",
     ability:"Overgrow",
     type1:"Steel",
-
 
     gender:"Male",
     status:"Healthy",
