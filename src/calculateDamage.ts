@@ -1135,7 +1135,6 @@ function get_relevent_att_def(from: pokemon, to: pokemon, move: move): [number, 
         att_stat_used,
         def_stat_used
     ];
-
 }
 
 function can_evolve(pkm: pokemon_name): boolean {
@@ -1427,17 +1426,20 @@ export function calculateDamage(from: pokemon, to: pokemon, from_side: pokemon_s
     if (from.status === "Burned" && move.name !== "Facade" && from.ability !== "Guts") {
         more_modifiers2.push(2048 / 4096);
     }
-
     const final_modifiers = get_final_modifiers(from, to, from_side, to_side, field, original_move, move, type_effectivness);
 
     more_modifiers2.push(final_modifiers.reduce((a, b) => a * b));
 
     if (to.protecting && (move.is_z_move || from.dynamaxed)) {
         more_modifiers2.push(1024 / 4096);
+    }else{
+        if(to.protecting){
+            return [0];
+        }
     }
 
-    return damages.map((
-        a) => poke_round([a, ...more_modifiers2].reduce((a, b) => Math.floor(a * b)))
+    return damages.map(
+        (a) => poke_round([a, ...more_modifiers2].reduce((a, b) => Math.floor(a * b)))
     );
 }
 

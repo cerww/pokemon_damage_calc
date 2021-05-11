@@ -180,16 +180,13 @@
     border-top: 1px solid orange;
 }
 
-.CalcPaneCell:nth-of-type(2) {
-    background: lightgray;
-}
-
 .CalcPaneCell {
     white-space:nowrap;
     text-align: center;
     padding-left:0.5ch;
     padding-right:0.5ch;
     user-select: none;
+    position:relative;
 }
 
 .statInputBox {
@@ -261,12 +258,12 @@ tr, td, th {
 
 #calculationPane {
     display: inline-grid;
-
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .scrollableThing{
     overflow-x: scroll;
-
     scrollbar-width:thin;
     scrollbar-color:green transparent;
 }
@@ -465,4 +462,31 @@ input[type=number] {
 
 .remove_pokemon_button:active:not(.grayedOut){
     background: lightblue;
+}
+
+.calculationRow{
+    display:contents;
+}
+
+.calculationRow:hover .CalcPaneCell > div:first-child,
+.calculationRow:hover .CalcPaneCell > div:last-child{
+    height:1px;
+    position:absolute;
+    background: black;
+    width: 100%;
+    left:0;
+    right:0;
+    z-index: 10000;
+}
+
+.calculationRow:hover .CalcPaneCell > div:first-child{
+    top:0;
+}
+
+.calculationRow:hover .CalcPaneCell > div:last-child{
+    bottom:0;
+}
+
+.calculationRow:hover .CalcPaneCell:last-child{
+    border-right:1px solid black;
 }

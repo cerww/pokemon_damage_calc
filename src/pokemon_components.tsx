@@ -1,26 +1,28 @@
-import React, {useState, useEffect, useContext, useReducer, useRef} from "react";
+import React, {useReducer, useState} from "react";
 //import {FaPlus} from "react-labels"
-
 import {
     ability_name,
     all_abilities,
     all_items,
     calculateActualStat,
+    calculateStatNoBoost,
     gender,
-    getPokemonID, item,
+    getPokemonID,
+    item,
     listOftypes,
-    move, move_type, nature,
+    move,
+    move_type,
+    nature,
     pokemon,
     pokemon_field,
     pokemon_side,
-    pokemon_type, status,
-    calculateStatNoBoost
+    pokemon_type,
+    status
 } from './pokemon'
 import {deepCopy} from "./deepCopy";
-import {all_move_names, all_pokemon_names, pokemons} from "./defaultPokemon";
+import {all_move_names, pokemons} from "./defaultPokemon";
 import {all_moves} from "./all_moves";
 import {calculateDamage} from "./calculateDamage";
-import {cursorTo} from "readline";
 
 function Centered(props: any) {
     let style = {
@@ -41,7 +43,7 @@ function Centered(props: any) {
 }
 
 
-export class CalculationPane extends React.Component<{
+export function CalculationPane(props: {
     pkm_field: pokemon_field,
     attacker: pokemon_side,
     defender: pokemon_side,
@@ -52,124 +54,126 @@ export class CalculationPane extends React.Component<{
     onNewPokemon: () => void,
     calculateDamage: (a: pokemon, b: pokemon, c: pokemon_side, d: pokemon_side, e: pokemon_field, m: move) => number[],
     selected_pokemon_idx: number
-}> {
+}) {
+    const header = props.defending_team.map((pkm) => <div
+        className={"calculationHeader"}>{pkm.nickname ?? pkm.name}</div>);
 
-    render() {
-        const header = this.props.defending_team.map((pkm) => <div
-            className={"calculationHeader"}>{pkm.nickname ?? pkm.name}</div>);
-
-
-        const calcs = this.props.attacking_team.map((pkm, idx) => {
-                let wat = pkm.moves.flatMap((move, i) =>
-                    this.props.defending_team.map((pkm2, j) =>
-                        <div onClick={() => this.props.onMoveSelect(pkm, pkm2, this.props.pkm_field, move)}
-                             className={`CalcPaneCell ${idx % 2 ? "oddRowCell" : "evenRowCell"} ${j % 2 ? "oddColumnCell" : "evenColumnCell"}`}>
-                            {(() => {
-                                let damages = calculateDamage(
-                                    pkm,
-                                    pkm2,
-                                    this.props.attacker,
-                                    this.props.defender,
-                                    this.props.pkm_field,
-                                    move);
-                                return `${
-                                    damages.reduce((a, b) => Math.min(a, b))} - ${
-                                    damages.reduce((a, b) => Math.max(a, b))}
+    const calcs = props.attacking_team.map((pkm, idx) =>
+        pkm.moves.map((move, i) =>
+            <div style={{display: "contents"}} className={"calculationRow"}>
+                {props.defending_team.map((pkm2, j) =>
+                    <div onClick={() => props.onMoveSelect(pkm, pkm2, props.pkm_field, move)}
+                         className={`CalcPaneCell ${idx % 2 ? "oddRowCell" : "evenRowCell"} ${j % 2 ? "oddColumnCell" : "evenColumnCell"}`}
+                         key={`${idx} ${i} ${j}`}
+                    >
+                        <div/>
+                        {(() => {
+                            let damages = calculateDamage(
+                                pkm,
+                                pkm2,
+                                props.attacker,
+                                props.defender,
+                                props.pkm_field,
+                                move);
+                            return `
+                            ${damages.reduce((a, b) => Math.min(a, b))} - 
+                            ${damages.reduce((a, b) => Math.max(a, b))}
                                 `;
-                            })()
-                            }
-                        </div>
-                    )
-                );
-                return wat;
-            }
-        );
+                        })()
+                        }
+                        <div/>
+                    </div>
+                )}
+            </div>
+        )
+    );
 
-        return (
-            <div style={{
-                gridTemplateColumns: `auto auto`,
-                paddingLeft: "0.3em",
-                fontSize: "0.72rem",
-                fontWeight: "normal",
-                display: "inline-grid"
-            }}
-                 className={"calcPaneOuter"}
+    return (
+        <div style={{
+            gridTemplateColumns: `auto auto`,
+            paddingLeft: "0.3em",
+            fontSize: "0.72rem",
+            fontWeight: "normal",
+            display: "inline-grid"
+        }}
+             className={"calcPaneOuter"}
 
-            >
-                <div style={{gridTemplateColumns: "auto auto", display: "inline-grid", marginBottom: "17px"}}>
-                    <div style={{textAlign: "center"}} className={"calculationHeader"}>Attacker</div>
-                    <div className={"calculationHeader"}>Move</div>
+        >
+            <div style={{gridTemplateColumns: "auto auto", display: "inline-grid", marginBottom: "17px"}}>
+                <div style={{textAlign: "center"}} className={"calculationHeader"}>Attacker</div>
+                <div className={"calculationHeader"}>Move</div>
 
-                    {this.props.attacking_team.map((pkm, idx) => {
-                        return <React.Fragment>
-                            <div id={"pokemonSideHeader"}
-                                 style={{gridRow: `span ${pkm.moves.length}`}}
-                                 onClick={() => this.props.onSelectPokemon(idx)}
-                                 className={`
+                {props.attacking_team.map((pkm, idx) => {
+                    return <React.Fragment>
+                        <div id={"pokemonSideHeader"}
+                             style={{gridRow: `span ${pkm.moves.length}`}}
+                             onClick={() => props.onSelectPokemon(idx)}
+                             className={`
                                  ${idx % 2 ? "oddCalcRow" : "evenCalcRow"} 
-                                 ${this.props.selected_pokemon_idx === idx ? "selected_pokemon_cell" : ""}`}
-                            >
-                                <div>
-                                    {(() => {
-                                        let name = pkm.nickname ?? pkm.name;
-                                        if (name.length > 17) {
-                                            return name.substr(0, 15) + "...";
-                                        }
-                                        return name;
-                                    })()}
-                                </div>
+                                 ${props.selected_pokemon_idx === idx ? "selected_pokemon_cell" : ""}`}
+                        >
+                            <div>
+                                {(() => {
+                                    let name = pkm.nickname ?? pkm.name;
+                                    if (name.length > 17) {
+                                        return name.substr(0, 15) + "...";
+                                    }
+                                    return name;
+                                })()}
                             </div>
-                            {pkm.moves.map((move) =>
-                                <div className={`moveEntry ${idx % 2 ? "oddCalcRow" : "evenCalcRow"}`}>
-                                    {move.name.substr(0, 13)}
-                                </div>
-                            )}
-                        </React.Fragment>
-                    })}
+                        </div>
+                        {pkm.moves.map((move) =>
+                            <div className={`moveEntry ${idx % 2 ? "oddCalcRow" : "evenCalcRow"}`}>
+                                {move.name.substr(0, 13)}
+                            </div>
+                        )}
+                    </React.Fragment>
+                })}
+            </div>
+            <div className={"scrollableThing"}>
+                <div style={{
+                    gridTemplateColumns: `repeat(${props.defending_team.length},max-content)`,
+                    fontSize: "0.72rem",
+                    fontWeight: "normal"
+                }}
+                     id={"calculationPane"}>
+                    <div style={{display: "contents"}}>{header}</div>
+                    {calcs}
                 </div>
-                <div className={"scrollableThing"}>
-                    <div style={{
-                        gridTemplateColumns: `repeat(${this.props.defending_team.length},auto)`,
-                        fontSize: "0.72rem",
-                        fontWeight: "normal"
-                    }}
-                         id={"calculationPane"}>
-                        {header}
-                        {calcs}
-                    </div>
-                </div>
+            </div>
 
 
-                <div className={"addNewPokemonButton"} onClick={() => {
-                    this.props.onNewPokemon()
-                }}>
-                    <div className={"calcAddNewPokemonButton"}>
-                        +
-                    </div>
+            <div className={"addNewPokemonButton"} onClick={props.onNewPokemon}>
+                <div className={"calcAddNewPokemonButton"}>
+                    +
                 </div>
-            </div>);
-    }
-
+            </div>
+        </div>);
 
 }
 
-export class ThingyThatCanBeMoreThanOneThingPlsRenameMe extends React.Component<{
-    names: string[]
-    currentSelected?: number
-},
-    {
-        currentIdx: number;
-    }> {
+export class ThingyThatCanBeMoreThanOneThingPlsRenameMe extends React.Component
+    <{
+        names: string[]
+        currentSelected?: number
+    },
+        {
+            currentIdx: number;
+        }> {
 
     constructor(props: any) {
         super(props);
-        this.state = {currentIdx: props.currentSelected ?? 0};
+        this.state =
+            {
+                currentIdx: props.currentSelected ?? 0
+            };
     }
 
     render() {
-        const buttonStyle = {
-            display: 'inline-block',
-        };
+        const buttonStyle =
+            {
+                display: 'inline-block',
+            };
 
 
         const topBarItems = this.props.names.map((name, idx) => {
@@ -407,6 +411,7 @@ export function PokemonCalc(props: {
 
     const [left_side_idx, set_left_idx] = useState(0);
     const [right_side_idx, set_right_idx] = useState(0);
+    const [selected_side, set_selected_side] = useState("L");
 
     function thingyThatChangesField() {
 
@@ -877,14 +882,16 @@ export function PokemonCalc(props: {
                 <div style={{display: "flex"}}>
                     <select>
                         <option>{pkm.name}</option>
-                        {Object.keys(pokemons).map((a) =>
+                        {Object.keys(pokemons).map((a, idx2) =>
                             <option value={a} onClick={(e) => {
                                 cb({
                                     action: "modify_pokemon",
                                     idx,
                                     modified_pokemon: pokemons[a]
                                 });
-                            }}>{a}
+                            }}
+                                    key={idx2}
+                            >{a}
                             </option>
                         )
                         }
@@ -937,7 +944,9 @@ export function PokemonCalc(props: {
                             modified_pokemon: {type1: event.target.value as pokemon_type},
                             idx
                         });
-                    }} defaultValue={pkm.type1}>
+                    }} defaultValue={pkm.type1}
+                            key={pkm.type1}
+                    >
                         {
                             listOftypes.map((typeName) =>
                                 <option value={typeName as string} key={typeName as string}>{typeName}</option>
@@ -952,7 +961,9 @@ export function PokemonCalc(props: {
                             modified_pokemon: {type2: event.target.value as pokemon_type},
                             idx
                         });
-                    }} defaultValue={pkm.type2 ?? "None"}>
+                    }} defaultValue={pkm.type2 ?? "None"}
+                            key={pkm.type2 ?? "No"}
+                    >
                         <option value="None" key="None">None</option>
                         {
                             listOftypes.map((typeName) => {
@@ -997,7 +1008,8 @@ export function PokemonCalc(props: {
 
             <div id="StatSelectors" style={{width: "60%"}}>
 
-                <div></div>
+                <div>
+                </div>
                 <div className={"centeredText"}>Base</div>
                 <div className={"centeredText"}>IVs</div>
                 <div className={"centeredText"}>EVs</div>
@@ -1296,7 +1308,7 @@ export function PokemonCalc(props: {
                 <div className={"centeredText"}>{calculateActualStat(pkm, "speed")}</div>
 
             </div>
-            <div style={{marginTop: "10px"}}>
+            <div style={{marginTop: "10px"}} key={pkm.nature}>
                 <div className={"SelectorLabel"}>Nature:</div>
                 <select onChange={(event) =>
                     cb({
@@ -1343,8 +1355,8 @@ export function PokemonCalc(props: {
                         modified_pokemon: {ability: e.target.value as ability_name}
                     })
                 }}>
-                    {all_abilities.map((a) =>
-                        <option value={a}>{a}</option>)
+                    {all_abilities.map((a, idx) =>
+                        <option value={a} key={idx}>{a}</option>)
                     }
                 </select>
             </div>
@@ -1358,7 +1370,7 @@ export function PokemonCalc(props: {
                             modified_pokemon: {item: e.target.value as item}
                         })
                     }}>
-                        {all_items.map((i) => <option value={i}>{i}</option>)}
+                        {all_items.map((i, idx) => <option value={i} key={idx}>{i}</option>)}
                     </select>
                 </div>
             </div>
@@ -1492,7 +1504,9 @@ export function PokemonCalc(props: {
                         display: "grid",
                         gridTemplateColumns: "18ch 6ch 14ch auto auto auto",
                         marginTop: "2px"
-                    }}>
+                    }}
+                                key={move_idx}
+                    >
                         <select value={m.name} onChange={(e) => {
                             cb({
                                 action: "modify_move",
@@ -1504,7 +1518,7 @@ export function PokemonCalc(props: {
                         }
                                 style={{maxWidth: "16ch"}}>
                             {all_move_names.map((mn) => {
-                                return <option value={mn}>{mn}</option>
+                                return <option value={mn} key={mn}>{mn}</option>
                             })}
                         </select>
                         <input type={"number"} onChange={(e) => {
@@ -1552,7 +1566,7 @@ export function PokemonCalc(props: {
                                     move_idx,
                                     modified_move: {is_crit: !m.is_crit}
                                 })
-                            }}>crit
+                            }}>Crit
                             </MyButton>
                             <MyButton enabled={m.is_z_move}
                                       onClick={() => {
@@ -1606,8 +1620,8 @@ export function PokemonCalc(props: {
                                  attacker={left_side}
                                  defender={right_side}
                                  onSelectPokemon={(pkm) => {
-                                     console.log("wat");
                                      set_left_idx(pkm);
+                                     set_selected_side("L");
                                      set_middle_part_idx(0);
                                  }}
 
@@ -1621,25 +1635,23 @@ export function PokemonCalc(props: {
                                          new_pokemon: deepCopy(pokemons["Blastoise"])
                                      });
                                      set_left_idx(left_team.length);
+                                     set_selected_side("L");
                                      set_middle_part_idx(0);
                                  }}
                                  calculateDamage={calculateDamage}
-                                 selected_pokemon_idx={left_side_idx}
+                                 selected_pokemon_idx={selected_side === "L" ? left_side_idx : -1}
                 />
             </div>
             <div id="middlePart" key={"middle" + middle_part_idx}>
                 <div>Place to put detailed move analysis</div>
                 <ThingyThatCanBeMoreThanOneThingPlsRenameMe
-                    names={["Team1", "Field", "Team2"]}
+                    names={["Pokemon", "Field"]}
                     currentSelected={middle_part_idx}
                 >
-                    <div key={"pkm1" + getPokemonID(left_team[left_side_idx])}>
-                        {thingyThatChangesPokemon(left_team[left_side_idx], true)}
+                    <div>
+                        {thingyThatChangesPokemon(selected_side === "L" ? left_team[left_side_idx] : right_team[right_side_idx], selected_side === "L")}
                     </div>
                     {thingyThatChangesField()}
-                    <div key={"pkm2" + getPokemonID(right_team[right_side_idx])}>
-                        {thingyThatChangesPokemon(right_team[right_side_idx], false)}
-                    </div>
                 </ThingyThatCanBeMoreThanOneThingPlsRenameMe>
             </div>
             <div id="rightSide">
@@ -1647,9 +1659,9 @@ export function PokemonCalc(props: {
                                  attacker={right_side}
                                  defender={left_side}
                                  onSelectPokemon={(pkm) => {
-                                     console.log("wat");
                                      set_right_idx(pkm);
-                                     set_middle_part_idx(2);
+                                     set_selected_side("R");
+                                     set_middle_part_idx(0);
                                  }}
                                  onMoveSelect={() => {
                                  }}
@@ -1661,10 +1673,11 @@ export function PokemonCalc(props: {
                                          new_pokemon: deepCopy(pokemons["Blastoise"])
                                      });
                                      set_right_idx(right_team.length);
-                                     set_middle_part_idx(2);
+                                     set_selected_side("R")
+                                     set_middle_part_idx(0);
                                  }}
                                  calculateDamage={calculateDamage}
-                                 selected_pokemon_idx={right_side_idx}
+                                 selected_pokemon_idx={selected_side === "R" ? right_side_idx : -1}
                 />
             </div>
 
