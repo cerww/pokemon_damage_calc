@@ -25,14 +25,13 @@ import {all_moves} from "./all_moves";
 import {calculateDamage} from "./calculateDamage";
 
 function Centered(props: any) {
-    let style = {
+    const style = {
         display: "flex",
     };
 
-    let innerStyle = {
+    const innerStyle = {
         margin: "0 auto"
     }
-
 
     return <div style={style}>
         <div style={innerStyle}>
