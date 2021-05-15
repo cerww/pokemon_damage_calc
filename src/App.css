@@ -95,7 +95,7 @@
 }
 
 #pokemonSideHeader:hover {
-    background: lightgray;
+    background: darkgray;
 }
 
 #pokemonSideHeader:active {
@@ -292,7 +292,7 @@ tr, td, th {
 
 .addNewPokemonButton {
     margin-bottom: 10px;
-    grid-row: span 2;
+    grid-row: span 3;
     user-select: none;
 }
 

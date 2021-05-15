@@ -1443,4 +1443,25 @@ export function calculateDamage(from: pokemon, to: pokemon, from_side: pokemon_s
     );
 }
 
+function calculate_all_damages(from: pokemon[], to: pokemon[], from_side: pokemon_side, to_side: pokemon_side,
+                               field: pokemon_field):Array<Array<Array<Array<Number>>>>{
+    let ret = [];
+    for(let pkm of from){
+        let dmgs_vs = [];
+        for(let pkm2 of to){
+            let dmgs = [];
+            for(let m of pkm.moves){
+                dmgs.push(calculateDamage(pkm,pkm2,from_side,to_side,field,m));
+            }
+            dmgs_vs.push(dmgs);
+        }
+        ret.push(dmgs_vs);
+    }
+
+    return ret;
+}
+
+
+
+
 

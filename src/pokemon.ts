@@ -3126,7 +3126,7 @@ export function calculateActualStat(pkm: pokemon, stat: "hp" | "att" | "def" | "
         return (Math.floor((((pkm.base_hp * 2 + pkm.hp_ivs) + Math.floor(pkm.hp_evs / 4)) * pkm.level))
             / 100 + 5 + pkm.level) * (pkm.dynamaxed ? 2 : 1);
     } else {
-        let [base, boost, iv, ev] =
+        const [base, boost, iv, ev] =
             stat === "att" ? [pkm.base_att, pkm.att_boost, pkm.att_ivs, pkm.att_evs] :
                 stat === "def" ? [pkm.base_def, pkm.def_boost, pkm.def_ivs, pkm.def_evs] :
                     stat === "sp_att" ? [pkm.base_sp_att, pkm.sp_att_boost, pkm.sp_att_ivs, pkm.sp_att_evs] :

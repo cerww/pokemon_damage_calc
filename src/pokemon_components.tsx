@@ -59,7 +59,7 @@ export function CalculationPane(props: {
 
     const calcs = props.attacking_team.map((pkm, idx) =>
         pkm.moves.map((move, i) =>
-            <div style={{display: "contents"}} className={"calculationRow"}>
+            <div className={"calculationRow"} key={i}>
                 {props.defending_team.map((pkm2, j) =>
                     <div onClick={() => props.onMoveSelect(pkm, pkm2, props.pkm_field, move)}
                          className={`CalcPaneCell ${idx % 2 ? "oddRowCell" : "evenRowCell"} ${j % 2 ? "oddColumnCell" : "evenColumnCell"}`}
@@ -121,8 +121,8 @@ export function CalculationPane(props: {
                                 })()}
                             </div>
                         </div>
-                        {pkm.moves.map((move) =>
-                            <div className={`moveEntry ${idx % 2 ? "oddCalcRow" : "evenCalcRow"}`}>
+                        {pkm.moves.map((move, move_idx) =>
+                            <div className={`moveEntry ${idx % 2 ? "oddCalcRow" : "evenCalcRow"}`} key={move_idx}>
                                 {move.name.substr(0, 13)}
                             </div>
                         )}
@@ -304,7 +304,6 @@ type useTeamArg =
 
 function useTeam(init_team: pokemon[]) {
     return useReducer((a: pokemon[], b: useTeamArg) => {
-
         switch (b.action) {
             case "remove_pokemon": {
                 return a.filter((pkm, idx) => idx !== b.idx);
@@ -370,6 +369,11 @@ function statBoostsOptions() {
         <option value={6}>+6</option>
     </React.Fragment>
 }
+
+let all_move_options = <React.Fragment>{all_move_names.map((mn) => {
+        return <option value={mn} key={mn}>{mn}</option>
+    })}</React.Fragment>
+;
 
 function MyButton(props: any) {
     return <div className={"notAButton" + (props.enabled ? " enabledButton" : "")}
@@ -879,7 +883,7 @@ export function PokemonCalc(props: {
             <div id="dropDownChangesPokemon" style={{position: "relative"}}>
                 <div className={"SelectorLabel"}/>
                 <div style={{display: "flex"}}>
-                    <select>
+                    <select key={"pokemon_select_thing"}>
                         <option>{pkm.name}</option>
                         {Object.keys(pokemons).map((a, idx2) =>
                             <option value={a} onClick={(e) => {
@@ -889,7 +893,6 @@ export function PokemonCalc(props: {
                                     modified_pokemon: pokemons[a]
                                 });
                             }}
-                                    key={idx2}
                             >{a}
                             </option>
                         )
@@ -1353,7 +1356,9 @@ export function PokemonCalc(props: {
                         idx,
                         modified_pokemon: {ability: e.target.value as ability_name}
                     })
-                }}>
+                }}
+                        key={"abilities"}
+                >
                     {all_abilities.map((a, idx) =>
                         <option value={a} key={idx}>{a}</option>)
                     }
@@ -1368,8 +1373,11 @@ export function PokemonCalc(props: {
                             idx,
                             modified_pokemon: {item: e.target.value as item}
                         })
-                    }}>
-                        {all_items.map((i, idx) => <option value={i} key={idx}>{i}</option>)}
+                    }}
+                            value={pkm.item}
+                            key={"pkm_item"}
+                    >
+                        {all_items.map((i, idx) => <option value={i}>{i}</option>)}
                     </select>
                 </div>
             </div>
@@ -1515,10 +1523,10 @@ export function PokemonCalc(props: {
                             });
                         }
                         }
+                                key={move_idx}
                                 style={{maxWidth: "16ch"}}>
-                            {all_move_names.map((mn) => {
-                                return <option value={mn} key={mn}>{mn}</option>
-                            })}
+                            {all_move_options
+                            }
                         </select>
                         <input type={"number"} onChange={(e) => {
                             cb({
